@@ -61,10 +61,21 @@
 .slick-prev {
     left: -35px;
 }
+
 [dir='rtl'] .slick-prev {
     right: -35px;
     left: auto;
 }
+
+.slick-next {
+    right: -35px;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -35px;
+}
+
 
 .rubrics .slick-prev {
     left: -55px;
@@ -74,22 +85,52 @@
     right: 5px;
 }
 
+.rubrics [dir='rtl'] .slick-prev {
+    right: -55px;
+    left: auto;
+}
+
+.rubrics [dir='rtl'] .slick-next {
+    right: auto;
+    left: 5px;
+}
+
+.news__slider .slick-prev {
+    left: -25px;
+}
+
+.news__slider .slick-next {
+    right: -25px;
+}
+
+[dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
 .top-news .slick-prev:before,
-.rubrics .slick-prev:before {
+.rubrics .slick-prev:before,
+.news__slider .slick-prev:before {
     content: '';
     background-image: url(../img/arrow-left-act.png);
+}
+
+.top-news .slick-next:before,
+.rubrics .slick-next:before,
+.news__slider .slick-next:before {
+    content: '';
+    background-image: url(../img/arrow-right-act.png);
 }
 
 .top-news [dir='rtl'] .slick-prev:before,
 .top-news .slick-next.slick-disabled:before {
     content: '';
     background-image: url(../img/arrow-right.png);
-}
-
-.top-news .slick-next:before,
-.rubrics .slick-next:before {
-    content: '';
-    background-image: url(../img/arrow-right-act.png);
 }
 
 .top-news [dir='rtl'] .slick-next:before,
@@ -110,14 +151,24 @@
     background-image: url(../img/arrow-left-02.png);
 }
 
-.slick-next {
-    right: -35px;
-}
-[dir='rtl'] .slick-next {
-    right: auto;
-    left: -35px;
+.news__slider [dir='rtl'] .slick-prev:before,
+.news__slider .slick-next.slick-disabled:before {
+    content: '';
+    background-image: url(../img/arrow-right-b.png);
+    background-color: white;
 }
 
+.news__slider [dir='rtl'] .slick-next:before,
+.news__slider .slick-prev.slick-disabled:before {
+    content: '';
+    background-image: url(../img/arrow-left-b.png);
+    background-color: white;
+}
+
+.news__slider .slick-next:before,
+.news__slider .slick-prev:before {
+    background-color: white;
+}
 
 
 

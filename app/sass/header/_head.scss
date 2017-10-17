@@ -71,4 +71,41 @@
 		color: white;
 		text-transform: uppercase;
 	}
+
+	.header__live-screen {
+		position: relative;
+		.icons-left,
+		.icons-right {
+			padding: 0 5px;
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: rgba(0,0,0,0.7);
+			img {
+				width: 13px;
+				height: 13px;
+			}
+
+			button {
+				font-size: 15px;
+				padding: 5px 0;
+				background-color: transparent;
+				color: white;
+				border: none;
+				cursor: pointer;
+				&:hover {
+					color: rgba(255, 105, 0, 0.78);
+				}
+			}
+		}
+		.icons-left {
+			left: 0;
+		}
+		.icons-right {
+			right: 0;
+			left: auto;
+		}
+	}
 }
