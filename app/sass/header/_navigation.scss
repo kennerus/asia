@@ -8,6 +8,7 @@
 	background-image: url(../img/nav-bg.png);
 	background-repeat: no-repeat;
 	.header__nav-menu {
+		margin: 0 5px;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -15,7 +16,7 @@
 		a {
 			padding: 23px 0 15px;
 			font-family: 'Gilroy-Bold', sans-serif;
-			font-size: 14px;
+			font-size: 13px;
 			text-transform: uppercase;
 			letter-spacing: 0.6px;
 			border-bottom: 2px solid transparent;
@@ -33,9 +34,9 @@
 	.header__search {
 		display: flex;
 		justify-content: space-between;
-		color: #ff6900;
 		button {
-			font-size: 2rem;
+			color: #ff6900;
+			font-size: 1.5rem;
 			border: none;
 			background-color: transparent;
 		}
@@ -52,7 +53,7 @@
 				color: #040000;
 			}
 			button {
-				padding: 0 3px;
+				padding: 0 0 0 3px;
 			}
 		}
 	}

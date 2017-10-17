@@ -1,2 +1,161 @@
-@import "_index";
+.main .container {
+	padding: 50px 40px;
+	display: flex;
+	background: linear-gradient(to bottom, #f6f4f9, transparent);
+	background-size: 100% 400px;
+}
 
+.content {
+	max-width: 700px;
+	padding-right: 30px;
+	box-sizing: border-box;
+	.top-news {
+		position: relative;
+		.top-news__block {
+			position: relative;
+			img {
+				width: 100%;
+				position: relative;
+				z-index: 1;
+			}
+
+			.top-news__describe {
+				width: 100%;
+				padding: 20px 30px;
+				position: absolute;
+				bottom: 0;
+				background: linear-gradient(to top, rgba(3, 3, 29, 0.75), transparent);
+				color: white;
+				z-index: 2;
+				h3 {
+					max-width: 450px;
+					margin: 0;
+				}
+
+				a {
+					font-family: 'Gilroy-Semibold', sans-serif;
+					font-size: 19px;
+					text-transform: uppercase;
+					line-height: 24px;
+					letter-spacing: 0.5px;
+					color: white;
+				}
+
+				span {
+					font-family: 'Lato', sans-serif;
+					font-size: 12px;
+				}
+			}
+		}
+		.top-news__buttons {
+			position: absolute;
+			right: 60px;
+			bottom: 40px;
+		}
+	}
+}
+
+
+
+.sidebar {
+	max-width: 210px;
+	h3 {
+		margin: 0;
+		padding: 10px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #ff6900;
+	}
+	.sidebar__first-ad {
+		img {
+			width: 100%;
+		}
+	}
+	.rubrics {
+		height: 230px;
+		position: relative;
+		margin: 30px 0;
+		background-color: white;
+		box-shadow: 1px 9px 16px rgba(0, 0, 0, 0.1);
+
+		.slide-title {
+			width: 50%;
+			padding: 5px 25px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			background-color: rgba(0,0,0,0.6);
+			text-align: center;
+			h4 {
+				margin: 0;
+				font-family: 'Gilroy-Bold', sans-serif;
+				font-size: 13px;
+				text-transform: uppercase;
+				color: white;
+			}
+		}
+
+		.rubrics-slide {
+			height: 190px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		// обрезание текста в первом слайдере сайдбара
+		.line-clamp {
+			margin: 5px 10px;
+			font-size: 13px;
+			display            : block;
+			display            : -webkit-box;
+			-webkit-box-orient : vertical;
+			position           : relative;
+
+			line-height        : 1.4;
+			overflow           : hidden;
+			text-overflow      : ellipsis;
+			padding            : 0 !important;
+			height             : calc(1em * 1.4 * 3);
+		}
+		.line-clamp:after {
+			content    : '...';
+			text-align : right;
+			bottom     : 0;
+			right      : 0;
+			width      : 25%;
+			display    : block;
+			position   : absolute;
+			height     : calc(1em * 1.4);
+			background : linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 75%);
+		}
+	}
+
+	.sidebar__events {
+		background-color: white;
+		box-shadow: 1px 9px 16px rgba(0, 0, 0, 0.1);
+		.events__map {
+			text-align: center;
+		}
+	}
+
+	.sidebar__second-ad,
+	.sidebar__third-ad {
+		margin: 30px 0;
+		background-color: white;
+		img {
+			width: 100%;
+		}
+	}
+
+	.special-nav,
+	.contests-nav,
+	.reciepe-nav {
+		position: absolute;
+		top: 18px;
+		right: 0;
+	}
+
+
+}
