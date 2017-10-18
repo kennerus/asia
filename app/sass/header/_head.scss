@@ -3,12 +3,11 @@
 	width: 100%;
 	height: 95px;
 	position: relative;
-	margin-top: 205px;
+	margin-top: 245px;
 	display: flex;
 	align-items: center;
 	background-image: url(../img/header-bg.png);
 	color: white;
-
 	.header__logo {
 		margin: 0 30px 0 50px;
 		padding: 0;
@@ -37,10 +36,19 @@
 	max-width: 245px;
 	position: fixed;
 	top: 30vh;
-	right: 7vw;
+	right: 5vw;
 	display: flex;
 	flex-direction: column;
+	z-index: 2;
+	@include breakpoint(max-width 1680px) {
+		right: 0;
+	}
 
+	@include breakpoint(max-width 1280px) {
+		img {
+			display: none;
+		}
+	}
 	.header__close {
 		padding: 0;
 		align-self: flex-end;
@@ -76,6 +84,9 @@
 		position: relative;
 		.icons-left,
 		.icons-right {
+			@include breakpoint(max-width 1280px) {
+				display: none;
+			}
 			padding: 0 5px;
 			display: flex;
 			flex-direction: column;
@@ -83,10 +94,6 @@
 			top: 50%;
 			transform: translateY(-50%);
 			background-color: rgba(0,0,0,0.7);
-			img {
-				width: 13px;
-				height: 13px;
-			}
 
 			button {
 				font-size: 15px;
