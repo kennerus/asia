@@ -5,7 +5,6 @@
 $(document).ready(function(){
 	$('.slider__top-news').slick({
 		appendArrows: $('.top-news__buttons'),
-		mobileFirst: true,
 		infinite: false
 	});
 	$('.special-slider').slick({
@@ -16,8 +15,20 @@ $(document).ready(function(){
 		appendArrows: $('.contests-nav'),
 		infinite: false
 	});
-	$('.reciepe-slider').slick({
-		appendArrows: $('.reciepe-nav'),
+	$('.content__special-slider').slick({
+		appendArrows: $('.content__special-nav'),
+		infinite: false
+	});
+	$('.content__contests-slider').slick({
+		appendArrows: $('.content__contests-nav'),
+		infinite: false
+	});
+	$('.reciepes-slider').slick({
+		appendArrows: $('.reciepes-nav'),
+		infinite: false
+	});
+	$('.content__reciepes-slider').slick({
+		appendArrows: $('.content__reciepes-nav'),
 		infinite: false
 	});
 	$('.news__slider').slick({
@@ -41,6 +52,10 @@ $(document).ready(function(){
 		appendArrows: $('.publications__right-arrows'),
 		mobileFirst: true,
 		infinite: false
+	});
+	$('#nav-icon1').click(function() {
+		$(this).toggleClass('open');
+		$('.header__nav-menu').toggleClass('expand');
 	});
 });
 </script>
