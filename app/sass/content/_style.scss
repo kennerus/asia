@@ -4,7 +4,7 @@
 	background: linear-gradient(to bottom, #f6f4f9, transparent);
 	background-size: 100% 400px;
 	background-repeat: no-repeat;
-	@include breakpoint(max-width 768px) {
+	@include breakpoint(max-width 992px) {
 		padding: 20px 10px;
 	}
 }
@@ -17,15 +17,15 @@
 		width: calc(100% - 245px);
 	}
 
-	@include breakpoint(max-width 768px) {
+	@include breakpoint(max-width 992px) {
 		width: 100%;
 		padding: 0;
 	}
 	h2 {
 		margin-top: 45px;
 		margin-bottom: 10px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
+		font-family: 'Roboto-Bold', sans-serif;
+		font-weight: normal;
 		font-size: 36px;
 		color: #ff6900;
 		border-bottom: 2px solid #ff6900;
@@ -45,12 +45,15 @@
 			position: absolute;
 			right: 60px;
 			bottom: 40px;
+			@include breakpoint(max-width 768px) {
+				bottom: 30px;
+			}
 		}
 	}
 
 	.top-news__describe {
-				width: 100%;
-				padding: 20px 30px;
+				width: 95%;
+				padding: 20px 20px;
 				position: absolute;
 				bottom: 0;
 				background: linear-gradient(to top, hsla(240, 81%, 6%, 0.75), transparent);
@@ -58,11 +61,12 @@
 				z-index: 2;
 				h3 {
 					max-width: 450px;
-					margin: 0;
+					margin: 0 0 10px;
 				}
 
 				a {
 					font-family: 'Gilroy-Semibold', sans-serif;
+					font-weight: normal;
 					font-size: 19px;
 					text-transform: uppercase;
 					line-height: 24px;
@@ -71,7 +75,7 @@
 				}
 
 				span {
-					font-family: 'Lato', sans-serif;
+					font-family: 'Lato-Medium', sans-serif;
 					font-size: 12px;
 				}
 			}
@@ -89,14 +93,18 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			margin-bottom: 10px;
+			@include breakpoint(max-width 768px) {
+				justify-content: center;
+			}
 		}
 
 		.news__latest-left,
 		.news__latest-right {
 			position: relative;
-			max-width: 410px;
-			width: 90vw;
-			/*height: 210px;*/
+			width: 49.5%;
+			@include breakpoint(max-width 768px) {
+				width: 100%;
+			}
 			img {
 				width: 100%;
 				height: 100%;
@@ -108,6 +116,8 @@
 				position: absolute;
 				top: 20px;
 				background-color: hsla(0, 0%, 0%, 0.65);
+				font-family: 'Gilroy-Black', sans-serif;
+				font-weight: normal;
 				font-size: 13px;
 			}
 
@@ -122,8 +132,12 @@
 				bottom: 0;
 				background: linear-gradient(to top, hsla(240, 81%, 6%, 0.75), transparent);
 				span {
-					font-family: 'Lato', sans-serif;
+					font-family: 'Lato-Medium', sans-serif;
 					font-size: 12px;
+				}
+
+				.news__latest-date {
+					font-size: 8px;
 				}
 
 				h4 {
@@ -139,10 +153,35 @@
 			}
 		}
 
+		.news__latest-left {
+			@include breakpoint(max-width 768px) {
+				margin-bottom: 10px;
+			}
+		}
+
+		.news__slider {
+			margin: 0 auto;
+			@include breakpoint(max-width 768px) {
+				width: 97%;
+			}
+
+			@include breakpoint(max-width 576px) {
+				width: 89%;
+			}
+		}
+
 		.news__slide {
-			width: 205px;
+			width: 200px;
 			margin: 0 9px 0 1px;
 			position: relative;
+			@include breakpoint(max-width 992px) {
+				width: auto;
+				margin: 0 5px;
+			}
+
+			@include breakpoint(max-width 576px) {
+				margin: 0;
+			}
 			img {
 				width: 100%;
 				height: 100%;
@@ -154,7 +193,7 @@
 				position: absolute;
 				top: 5px;
 				background-color: hsla(0, 0%, 0%, 0.65);
-				font-family: 'Gilroy-Bold', sans-serif;
+				font-family: 'Gilroy-Black', sans-serif;
 				font-size: 11px;
 			}
 
@@ -169,8 +208,12 @@
 			}
 
 			span {
-				font-family: 'Lato', sans-serif;
-				font-size: 9px;
+				font-family: 'Lato-Medium', sans-serif;
+				font-size: 8px;
+			}
+
+			.news__latest-date {
+				font-size: 7px;
 			}
 
 			h4 {
@@ -179,6 +222,11 @@
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
+				@include breakpoint(max-width 768px) {
+					white-space: normal;
+					overflow: auto;
+					text-overflow: inherit;
+				}
 				a {
 					color: white;
 					font-family: "Gilroy-Semibold", sans-serif;
@@ -189,32 +237,45 @@
 			}
 		}
 	}
-	
+
 	.live__title,
 	.video__title {
 			margin-top: 45px;
 			display: flex;
-			align-items: center;
+			align-items: flex-end;
 			border-bottom: 2px solid #ff6900;
 			img {
-				margin-right: 10px;
-				margin-bottom: 5px;
+				margin-right: 20px;
+				margin-bottom: 10px;
 			}
 			h2 {
-				margin: 0;
+				margin: 0 0 10px;
 				border: none;
+				font-size: 26px;
 			}
 		}
 
 	.live {
+		.live__title {
+			h2 {
+				margin-bottom: 15px;
+			}
+		}
 		.live__content {
 			width: 100%;
 			margin-top: 10px;
 			display: flex;
+			@include breakpoint(max-width 992px) {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
 		}
 
 		.live__tab-content {
-			width: 550px;
+			max-width: 550px;
+			@include breakpoint(max-width 992px) {
+				width: 100%;
+			}
 			img {
 				display: block;
 				width: 100%;
@@ -228,21 +289,29 @@
 			display: flex;
 			flex-direction: column;
 			text-align: center;
+			@include breakpoint(max-width 992px) {
+				width: 100%;
+				margin-top: 20px;
+				align-items: center;
+			}
+
 			.tablinks {
 				margin-bottom: 10px;
 				padding: 0;
 				padding-left: 25px;
 				padding-bottom: 10px;
-				font-family: 'Lato', sans-serif;
-				font-size: 16px;
+				font-family: 'Lato-Regular', sans-serif;
+				font-size: 14px;
 				text-align: left;
 				background-color: transparent;
 				box-sizing: padding-box;
 				border: none;
 				cursor: pointer;
+				color: #040000;
 				span {
-					font-weight: 900;
+					font-family: 'Lato-Black', sans-serif;
 					font-size: 18px;
+					color: black;
 				}
 			}
 
@@ -263,8 +332,8 @@
 				}
 			}
 			.tele {
-				font-weight: 900;
-				font-size: 13px;
+				font-family: 'Lato-Black', sans-serif;
+				font-size: 10px;
 				color: #1b1716;
 				text-transform: uppercase;
 				text-decoration: underline;
@@ -279,16 +348,48 @@
 	}
 
 	.video {
+		.video__title {
+			h2 {
+				margin: 0;
+				font-size: 36px;
+			}
+		}
 		.video__slider {
 			margin-top: 10px;
+			@include breakpoint(max-width 768px) {
+				width: 97%;
+				margin: 10px auto 0;
+			}
+			@include breakpoint(max-width 576px) {
+				width: 89%;
+				margin: 10px auto 0;
+			}
 			.video__slide {
 				width: 200px;
 				height: 220px;
 				margin: 0 9px 0 1px;
 				position: relative;
+				@include breakpoint(max-width 992px) {
+					height: 26vw;
+				}
+
+				@include breakpoint(max-width 768px) {
+					height: 39vw;
+				}
+
+				@include breakpoint(max-width 576px) {
+					height: 70vw;
+					margin: 0;
+				}
+
+				@include breakpoint(max-width 400px) {
+					height: 80vw;
+				}
+
 				div {
 					&:hover {
 						cursor: pointer;
+						background-color: white;
 						box-shadow: 1px 9px 16px rgba(0, 0, 0, 0.1);
 					}
 				}
@@ -299,10 +400,10 @@
 				.describe {
 					margin: 0;
 					padding: 10px 5px 15px;
-					font-family: 'Lato', sans-serif;
-					font-weight: 700;
+					font-family: 'Lato-Bold', sans-serif;
 					font-size: 13px;
 					line-height: 18px;
+					color: #040000;
 				}
 			}
 		}
@@ -317,18 +418,24 @@
 			margin-top: 0;
 			width: 100%;
 		}
-		.publications__left,
-		.publications__right {
-			position: relative;
-			max-width: 410px;
-			display: flex;
-			flex-direction: column;
-		}
 
 		img {
 			width: 100%;
 			height: 100%;
 		}
+
+		.publications__left,
+		.publications__right {
+			position: relative;
+			max-width: 410px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			@include breakpoint(max-width 576px) {
+				width: 100%;
+			}
+		}
+
 
 		.publications__left-news,
 		.publications__right-news {
@@ -336,6 +443,10 @@
 			position: relative;
 			display: flex;
 			justify-content: space-between;
+			flex-wrap: wrap;
+			@include breakpoint(max-width 576px) {
+				justify-content: center;
+			}
 		}
 
 		.first-news,
@@ -344,13 +455,18 @@
 			width: 200px;
 			color: white;
 			text-transform: uppercase;
+			@include breakpoint(max-width 576px) {
+				width: 100%;
+				margin: 10px 0;
+			}
 			h3 {
 				margin: 0;
 				padding: 7px 20px 5px;
 				position: absolute;
 				top: 5px;
 				background-color: hsla(0, 0%, 0%, 0.65);
-				font-family: 'Gilroy-Bold', sans-serif;
+				font-family: 'Gilroy-Black', sans-serif;
+				font-weight: normal;
 				font-size: 12px;
 			}
 
@@ -365,8 +481,12 @@
 			}
 
 			span {
-				font-family: 'Lato', sans-serif;
-				font-size: 9px;
+				font-family: 'Lato-Medium', sans-serif;
+				font-size: 8px;
+			}
+
+			.news-slide__date {
+				font-size: 7px;
 			}
 
 			h4 {
@@ -375,10 +495,17 @@
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
+				@include breakpoint(max-width 576px) {
+					white-space: normal;
+					overflow: auto;
+					text-overflow: inherit;
+				}
 				a {
 					color: white;
 					font-family: "Gilroy-Semibold", sans-serif;
+					font-weight: normal;
 					font-size: 9px;
+					line-height: 12px;
 				}
 			}
 		}
@@ -393,6 +520,8 @@
 				position: absolute;
 				top: 20px;
 				background-color: rgba(0,0,0,.65);
+				font-family: 'Gilroy-Black', sans-serif;
+				font-weight: normal;
 				font-size: 13px;
 			}
 		}
@@ -403,6 +532,9 @@
 
 		.publications__left-news {
 			margin-top: 10px;
+			@include breakpoint(max-width 1200px) {
+				margin-bottom: 10px;
+			}
 		}
 
 		.publications__left-arrows,
@@ -414,14 +546,32 @@
 
 		.top-news__describe {
 			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			div {
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+			}
 			h4 {
-				max-width: 300px;
+				width: 80%;
 				margin: 0;
+				@include breakpoint(max-width 576px) {
+					width: 180px;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
 				a {
 					font-size: 13px;
 					line-height: normal;
 					letter-spacing: normal;
 				}
+			}
+
+			.top-news__date {
+				font-size: 8px;
 			}
 		}
 	}
@@ -456,7 +606,7 @@
 .sidebar {
 	position: relative;
 	max-width: 245px;
-	@include breakpoint(max-width 768px) {
+	@include breakpoint(max-width 992px) {
 		display: none;
 	}
 }
@@ -466,9 +616,9 @@
 	h3 {
 		margin: 0;
 		padding: 10px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		font-size: 16px;
+		font-family: 'Roboto-Bold', sans-serif;
+		font-weight: normal;
+		font-size: 22px;
 		text-transform: uppercase;
 		color: #ff6900;
 	}
@@ -476,14 +626,14 @@
 
 .rubrics {
 	max-width: 245px;
-	height: 250px;
+	height: 260px;
 	position: relative;
 	margin: 30px auto;
 	background-color: white;
 	box-shadow: 1px 9px 16px hsla(0%, 0%, 0%, 0.1);
 	.slide-title {
 		width: 50%;
-		padding: 5px 25px;
+		padding: 5px 20px;
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -492,7 +642,8 @@
 		text-align: center;
 		h4 {
 			margin: 0;
-			font-family: 'Gilroy-Bold', sans-serif;
+			font-family: 'Gilroy-Black', sans-serif;
+			font-weight: normal;
 			font-size: 13px;
 			text-transform: uppercase;
 			color: white;
@@ -506,7 +657,9 @@
 	// обрезание текста в первом слайдере сайдбара
 	.line-clamp {
 		margin: 5px 10px;
+		font-family: 'Gilroy-Medium', sans-serif;
 		font-size: 13px;
+		color: #1b1716;
 		display            : block;
 		display            : -webkit-box;
 		-webkit-box-orient : vertical;
@@ -585,7 +738,13 @@
 .content__second-ad,
 .content__third-ad,
 .content__first-ad {
-	@include breakpoint(min-width 768px) {
+	@include breakpoint(min-width 992px) {
 		display: none;
+	}
+}
+
+.content__contests {
+	@include breakpoint(max-width 768px) {
+		margin: 0 auto;
 	}
 }

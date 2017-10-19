@@ -8,6 +8,7 @@
 	background-color: white;
 	background-image: url(../img/nav-bg.png);
 	background-repeat: no-repeat;
+	background-size: contain;
 	z-index: 2;
 	.header__nav-menu {
 		margin: 0 5px;
@@ -24,7 +25,7 @@
 		a {
 			padding: 26px 0 15px;
 			font-family: 'Gilroy-Bold', sans-serif;
-			font-size: 13px;
+			font-size: 14px;
 			text-transform: uppercase;
 			letter-spacing: 0.6px;
 			border-bottom: 2px solid transparent;
