@@ -14,7 +14,7 @@
 	padding-right: 30px;
 	box-sizing: border-box;
 	@include breakpoint(max-width 1200px) {
-		width: calc(100% - 245px);
+		width: calc(100% - 240px);
 	}
 
 	@include breakpoint(max-width 992px) {
@@ -96,6 +96,7 @@
 			@include breakpoint(max-width 768px) {
 				justify-content: center;
 			}
+
 		}
 
 		.news__latest-left,
@@ -212,7 +213,7 @@
 				font-size: 8px;
 			}
 
-			.news__latest-date {
+			.news-slide__date {
 				font-size: 7px;
 			}
 
@@ -524,6 +525,10 @@
 				font-weight: normal;
 				font-size: 13px;
 			}
+
+			.top-news__date {
+				font-size: 8px;
+			}
 		}
 
 		.publications__right-news {
@@ -569,10 +574,6 @@
 					letter-spacing: normal;
 				}
 			}
-
-			.top-news__date {
-				font-size: 8px;
-			}
 		}
 	}
 
@@ -605,7 +606,7 @@
 
 .sidebar {
 	position: relative;
-	max-width: 245px;
+	max-width: 240px;
 	@include breakpoint(max-width 992px) {
 		display: none;
 	}
@@ -625,7 +626,7 @@
 }
 
 .rubrics {
-	max-width: 245px;
+	max-width: 240px;
 	height: 260px;
 	position: relative;
 	margin: 30px auto;
@@ -685,7 +686,7 @@
 
 .sidebar__events,
 .content__events {
-	width: 245px;
+	width: 240px;
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 1px 9px 16px hsla(0, 0, 0, 0.1);
@@ -706,11 +707,12 @@
 
 .sidebar__first-ad,
 .content__first-ad {
-	width: 245px;
+	width: 240px;
 	height: 400px;
 	margin: 30px auto 0;
 	img {
 		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -722,12 +724,13 @@
 .sidebar__third-ad,
 .content__second-ad,
 .content__third-ad {
-	width: 245px;
+	width: 240px;
 	height: 400px;
 	margin: 30px auto;
 	background-color: white;
 	img {
 		width: 100%;
+		height: 100%;
 	}
 }
 
