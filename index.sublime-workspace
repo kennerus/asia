@@ -1,0 +1,810 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"w",
+				"wrap"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"varia",
+				"variableWidth"
+			],
+			[
+				"slide",
+				"slidesToShow"
+			],
+			[
+				"va",
+				"variableWidth"
+			],
+			[
+				"sli",
+				"slidesToScroll"
+			],
+			[
+				"break",
+				"breakpoint"
+			],
+			[
+				"brea",
+				"breakpoint"
+			],
+			[
+				"slides",
+				"slidesToShow"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"texw",
+				"text-overflow"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"fl",
+				"flex-end"
+			],
+			[
+				"botb",
+				"border-bottom"
+			],
+			[
+				"defaul",
+				"defaultOpen"
+			],
+			[
+				"fwr",
+				"flex-wrap"
+			],
+			[
+				"hs",
+				"hsla()"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"texd",
+				"text-decoration"
+			],
+			[
+				"trans",
+				"translateY()"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"n",
+				"nowrap"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"med",
+				"med.jpg\tw:219 h:125"
+			],
+			[
+				"conso",
+				"console_log"
+			],
+			[
+				"cons",
+				"console_log"
+			],
+			[
+				"header__l",
+				"header__live"
+			],
+			[
+				"getele",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Element"
+			],
+			[
+				"funct",
+				"function_with_name"
+			],
+			[
+				"getEle",
+				"getElementsByClassName\t( classNames: DOMString ): HTMLCollection Element"
+			],
+			[
+				"teal",
+				"text-align"
+			],
+			[
+				"di",
+				"d-ib\tdisplay: inline-block;"
+			],
+			[
+				"dire",
+				"flex-direction"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"foo",
+				"footer-shadow.png\tw:1178 h:114"
+			],
+			[
+				"logo",
+				"footer-logo.png\tw:178 h:60"
+			],
+			[
+				"ali",
+				"align-self"
+			],
+			[
+				"backc",
+				"background-color"
+			],
+			[
+				"fle",
+				"flex-grow"
+			],
+			[
+				"s",
+				"space-between"
+			],
+			[
+				"fsi",
+				"font-size"
+			],
+			[
+				"textra",
+				"text-transform"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"slick",
+				"slick-theme.css"
+			],
+			[
+				"prod",
+				"product.jpg\tw:433 h:378"
+			],
+			[
+				"po",
+				"girl-portrait.png\tw:127 h:142"
+			],
+			[
+				"jcs",
+				"jc-sb\tjustify-content: space-between;"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"ico",
+				"mark-ico.png\tw:12 h:16"
+			],
+			[
+				"jf",
+				"jc-fe\tjustify-content: flex-end;"
+			],
+			[
+				"js",
+				"jc-sb\tjustify-content: space-between;"
+			],
+			[
+				"cri",
+				"crio-03.png\tw:303 h:389"
+			],
+			[
+				"cri2",
+				"crio-02.png\tw:303 h:392"
+			],
+			[
+				"cri0",
+				"crio-01.png\tw:301 h:392"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"cir",
+				"circle-busines.png\tw:403 h:491"
+			],
+			[
+				"bus",
+				"crio-busines.jpg\tw:527 h:579"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"jc",
+				"jc-sa\tjustify-content: space-around;"
+			],
+			[
+				"fd",
+				"fxd-c\tflex-direction: column;"
+			],
+			[
+				"f",
+				"fz\tfont-size"
+			],
+			[
+				"circ",
+				"circle-about.png\tw:323 h:313"
+			],
+			[
+				"ab",
+				"about-bg.png\tw:953 h:741"
+			],
+			[
+				"cont",
+				"contacts"
+			],
+			[
+				"cr",
+				"crio-why.png\tw:197 h:271"
+			],
+			[
+				"lo",
+				"luk-oil-logo.png\tw:82 h:83"
+			],
+			[
+				"криоса",
+				"криосаун"
+			],
+			[
+				"кри",
+				"криосауны"
+			],
+			[
+				"calcula",
+				"calculate__form"
+			],
+			[
+				"se",
+				"section"
+			],
+			[
+				"sect",
+				"section"
+			],
+			[
+				"mou",
+				"mouse-about.png\tw:16 h:24"
+			],
+			[
+				"crio",
+				"crio-about.png\tw:953 h:585"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"df",
+				"d-f\tdisplay: flex;"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"pa",
+				"placeholder\tAttr"
+			],
+			[
+				"main",
+				"main\t _style.scss"
+			],
+			[
+				"al",
+				"alt\tAttr"
+			],
+			[
+				"vi",
+				"vitamine-ico.png\tw:56 h:56"
+			],
+			[
+				"thre",
+				"three__elements"
+			],
+			[
+				"i",
+				"img/"
+			],
+			[
+				"margin",
+				"margin-top\t(_style.scss)"
+			],
+			[
+				"ins",
+				"insta-ico.png\tw:30 h:30"
+			],
+			[
+				"vk",
+				"vk-ico.png\tw:30 h:30"
+			],
+			[
+				"foote",
+				"footer__nav"
+			],
+			[
+				"he",
+				"header__callback\t _head.scss"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "adsdf",
+			"file": "/home/kennerus/Документы/11",
+			"file_size": 0,
+			"file_write_time": 131529545005790198,
+			"settings":
+			{
+				"buffer_size": 5,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Alignment ",
+				"BracketHighlighter: Find Matching Offscreen Bracket"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 388.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/asia.loc"
+	],
+	"file_history":
+	[
+		"/home/kennerus/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/var/www/asia.loc/app/sass/content/_style.scss",
+		"/var/www/asia.loc/app/html/content.html",
+		"/var/www/asia.loc/app/sass/styles.scss",
+		"/var/www/asia.loc/app/html/pages/news.html",
+		"/var/www/asia.loc/app/html/header-news.html",
+		"/var/www/asia.loc/app/html/content-news.html",
+		"/home/kennerus/Документы/slider-internet-magazin/index.html",
+		"/var/www/materna.loc/app/html/product.html",
+		"/var/www/asia.loc/app/sass/header/_head.scss",
+		"/home/kennerus/Документы/slider-internet-magazin/js/js_jquery.js",
+		"/home/kennerus/Документы/slider-internet-magazin/js/js_scripts.js",
+		"/var/www/asia.loc/app/sass/libs/_fonts.scss",
+		"/var/www/asia.loc/app/html/footer.html",
+		"/var/www/asia.loc/app/sass/footer/_style.scss",
+		"/var/www/asia.loc/app/html/html_close.html",
+		"/home/kennerus/Загрузки/keygen.php",
+		"/var/www/asia.loc/app/libs/slick/slick-theme.css",
+		"/var/www/asia.loc/app/sass/header/_navigation.scss",
+		"/var/www/concecration.loc/app/sass/header/_navigation.scss",
+		"/var/www/asia.loc/app/sass/base/_grid.scss",
+		"/var/www/asia.loc/app/sass/base/_base.scss",
+		"/var/www/asia.loc/app/html/header.html",
+		"/var/www/crio.loc/gulpfile.js",
+		"/var/www/concecration.loc/js/menu-script.js",
+		"/var/www/concecration.loc/app/html/header.html",
+		"/var/www/concecration.loc/app/html/html_close.html",
+		"/var/www/asia.loc/app/html/html_open.html",
+		"/home/kennerus/Документы/index.html",
+		"/home/kennerus/Документы/style.css",
+		"/var/www/asia.loc/css/fontello.css",
+		"/var/www/asia.loc/.gitignore",
+		"/var/www/crio.loc/app/sass/base/_grid.scss",
+		"/var/www/concecration.loc/app/sass/libs/_fonts.scss",
+		"/var/www/asia/app/html/html_open.html",
+		"/var/www/asia/app/html/html_close.html",
+		"/var/www/materna.loc/app/html/html_open.html",
+		"/home/kennerus/Документы/fancybox-master/dist/jquery.fancybox.js",
+		"/var/www/materna.loc/app/html/html_close.html",
+		"/var/www/materna.loc/app/sass/content/_style.scss",
+		"/var/www/materna.loc/app/sass/content/_product.scss",
+		"/var/www/materna.loc/css/slick-theme.css",
+		"/var/www/materna.loc/app/sass/base/_base.scss",
+		"/var/www/materna.loc/app/sass/content/_catalogue.scss",
+		"/home/kennerus/Документы/1/index.html",
+		"/home/kennerus/Документы/1/style.css",
+		"/home/kennerus/Документы/pika/index.html",
+		"/var/www/materna.loc/app/sass/content/_best.scss",
+		"/var/www/materna.loc/app/html/pages/product.html",
+		"/var/www/materna.loc/app/sass/header/_head.scss",
+		"/var/www/materna.loc/app/html/footer.html",
+		"/var/www/materna.loc/app/html/header.html",
+		"/var/www/materna.loc/app/sass/footer/_style.scss",
+		"/var/www/materna.loc/app/html/help.html",
+		"/var/www/crio.loc/app/sass/header/_head.scss",
+		"/var/www/crio.loc/app/sass/base/_base.scss",
+		"/var/www/crio.loc/app/sass/header/_navigation.scss",
+		"/var/www/materna.loc/app/sass/content/_help.scss",
+		"/var/www/materna.loc/app/html/best.html",
+		"/var/www/materna.loc/app/html/catalogue.html",
+		"/var/www/crio.loc/app/sass/content/_calculate.scss",
+		"/var/www/crio.loc/app/sass/footer/_style.scss",
+		"/var/www/crio.loc/app/sass/content/_faq.scss",
+		"/var/www/crio.loc/app/sass/content/_about.scss",
+		"/var/www/crio.loc/app/sass/content/_why.scss",
+		"/var/www/crio.loc/app/html/why.html",
+		"/var/www/crio.loc/app/html/html_close.html",
+		"/var/www/crio.loc/app/html/html_open.html",
+		"/var/www/crio.loc/app/html/calculate.html",
+		"/var/www/crio.loc/app/sass/base/_elements.scss",
+		"/var/www/crio.loc/app/sass/content/_advantages.scss",
+		"/home/kennerus/Документы/07/index.html",
+		"/var/www/crio.loc/app/libs/slick/slick-theme.css",
+		"/var/www/crio.loc/app/html/about.html",
+		"/var/www/crio.loc/app/sass/libs/_fonts.scss",
+		"/var/www/crio.loc/app/html/header.html",
+		"/var/www/crio.loc/app/html/faq.html",
+		"/var/www/crio.loc/app/html/advantages.html",
+		"/var/www/crio.loc/app/html/footer.html",
+		"/var/www/crio.loc/app/sass/content/_style.scss",
+		"/var/www/crio.loc/app/html/content.html",
+		"/var/www/crio.loc/app/html/contacts.html",
+		"/var/www/crio.loc/app/sass/content/_contacts.scss",
+		"/var/www/crio.loc/js/slick.js",
+		"/home/kennerus/Документы/slick-1.8.0/slick/slick-theme.css",
+		"/home/kennerus/Рабочий стол/slick - the last carousel you'll ever need.html",
+		"/home/kennerus/Рабочий стол/slick - the last carousel you'll ever need_files/a_002.html",
+		"/home/kennerus/Рабочий стол/slick - the last carousel you'll ever need_files/a.html",
+		"/home/kennerus/Рабочий стол/slick - the last carousel you'll ever need_files/a_003.html",
+		"/home/kennerus/Документы/slick-1.8.0/index.html",
+		"/var/www/materna.loc/app/sass/content/_food.scss",
+		"/var/www/materna.loc/app/html/pages/help.html",
+		"/var/www/materna.loc/app/html/content-help.html",
+		"/var/www/materna.loc/app/html/popular.html",
+		"/tmp/fz3temp-2/_service.scss",
+		"/var/www/materna.loc/app/sass/header/_navigation.scss",
+		"/var/www/materna.loc/app/sass/content/_icons.scss",
+		"/var/www/materna.loc/app/html/three-in-one.html",
+		"/var/www/materna.loc/app/html/icons.html",
+		"/var/www/materna.loc/app/sass/content/_three-in-one.scss",
+		"/var/www/materna.loc/app/html/pages/catalogue.html",
+		"/var/www/materna.loc/app/sass/content/_feedback-main.scss",
+		"/var/www/materna.loc/app/html/feedback-main.html",
+		"/var/www/materna.loc/app/sass/libs/_fonts.scss",
+		"/var/www/materna.loc/app/html/content.html",
+		"/home/kennerus/Рабочий стол/index.html",
+		"/var/www/materna.loc/app/html/food.html",
+		"/var/www/materna.loc/app/sass/_products.scss",
+		"/home/kennerus/Рабочий стол/fontello-8aa89e66/demo.html",
+		"/var/www/materna.loc/css/fontello.css",
+		"/var/www/concecration.loc/app/html/index.html",
+		"/home/kennerus/.config/sublime-text-3/Packages/User/All Autocomplete.sublime-settings",
+		"/var/www/materna.loc/app/libs/fontello.css",
+		"/home/kennerus/.config/sublime-text-3/Packages/CSS Extended Completions/css_style_completions.sublime-settings",
+		"/home/kennerus/.config/sublime-text-3/Packages/All Autocomplete/All Autocomplete.sublime-settings",
+		"/home/kennerus/Рабочий стол/untitled..no-sublime-package",
+		"/var/www/materna.loc/gulpfile.js",
+		"/var/www/materna.loc/app/html/pages/index.html",
+		"/var/www/materna.loc/app/html/feedback.html",
+		"/var/www/materna.loc/app/html/tree-in-one.html",
+		"/var/www/materna.loc/app/html/new.html"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 121.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/kennerus/Документы/11",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"colorcode": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

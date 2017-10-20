@@ -8,3 +8,225 @@
 .news-header .header__head {
 	margin-top: 0;
 }
+
+.news-main__title {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	border-bottom: 2px solid #ff6900;
+	h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+		border: none;
+	}
+
+	.select {
+		position: relative;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		.active-country {
+			padding-right: 25px;
+			font-family: 'Roboto-Bold', sans-serif;
+			font-size: 14px;
+			color: #040000;
+			cursor: pointer;
+			&:after {
+				content: '';
+				width: 10px;
+				height: 6px;
+				margin-left: 15px;
+				position: absolute;
+				top: 5px;
+				background-image: url(../img/arrow-down.png);
+				background-repeat: no-repeat;
+			}
+		}
+		ul {
+			padding: 0;
+			position: absolute;
+			display: none;
+			list-style: none;
+			background-color: white;
+			li {
+				width: 50%;
+				padding: 0;
+			}
+		}
+	}
+}
+
+.news-main__nav {
+	.news-main__nav-menu {
+		margin: 5px 0;
+		display: flex;
+		justify-content: space-between;
+		a {
+			padding: 7px 5px 5px	;
+			font-family: 'Roboto-Bold', sans-serif;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: #040000;
+			border: 1px solid transparent;
+			&:hover, &:focus {
+				border-color: #ff6900;
+			}
+			&:active {
+				background-color: white;
+			}
+		}
+		.active {
+			border-color: #ff6900;
+			background-color: white;
+		}
+	}
+}
+
+.news-blocks {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	color: white;
+	text-transform: uppercase;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	.big-block {
+		max-width: 405px;
+		min-width: 280px;
+		margin: 5px 0;
+		position: relative;
+		.big-block__rubric {
+			h3 {
+				margin: 0;
+				padding: 7px 20px 5px;
+				position: absolute;
+				top: 20px;
+				background-color: rgba(0,0,0,.65);
+				font-family: 'Gilroy-Black',sans-serif;
+				font-weight: normal;
+				font-size: 13px;
+			}
+		}
+
+		.big-block__title,
+		.big-block__title-top {
+			height: 30%;
+			padding: 10px;
+			display: flex;
+			align-items: flex-end;
+			flex-wrap: wrap;
+			position: absolute;
+			bottom: 0;
+			background: linear-gradient(to top, hsla(240, 81%, 6%, 0.75), transparent);
+			span {
+				padding-right: 10px;
+				font-family: 'Lato-Medium',sans-serif;
+				font-size: 8px;
+			}
+
+			.big-block__views {
+				font-size: 12px;
+			}
+
+			h4{
+				margin: 0;
+				a {
+					font-family: 'Gilroy-Bold',sans-serif;
+					font-weight: normal;
+					font-size: 17px;
+					color: #fff;
+				}
+			}
+		}
+
+		.big-block__title-top {
+			padding: 0 0 20px 15px;
+			span {
+				font-size: 12px;
+				text-transform: none;
+			}
+		}
+	}
+
+	.small-block__container {
+		max-width: 405px;
+		min-width: 280px;
+		margin: 5px 0;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.small-block {
+		width: 195px;
+		height: 125px;
+		margin: 5px 0;
+		position: relative;
+		h3 {
+			margin: 0;
+			padding: 7px 20px 5px;
+			position: absolute;
+			top: 5px;
+			background-color: rgba(0,0,0,.65);
+			font-family: 'Gilroy-Black',sans-serif;
+			font-weight: normal;
+			font-size: 11px;
+		}
+
+		.small-block__title {
+			width: 100%;
+			max-height: 60%;
+			padding: 10px;
+			position: absolute;
+			bottom: 0;
+			background: linear-gradient(to top, hsla(240, 81%, 6%, 0.75), transparent);
+			box-sizing: border-box;
+			h4 {
+				margin: 0;
+				line-height: .9;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				a {
+					color: white;
+					font-family: 'Roboto-Bold',sans-serif;
+					font-weight: normal;
+					font-size: 9px;
+				}
+			}
+
+			span {
+				font-family: 'Roboto-Bold', sans-serif;
+				font-size: 7px;
+			}
+
+			.small-block__views {
+				font-size: 8px;
+			}
+		}
+	}
+}
+
+.more {
+	margin: 40px auto;
+	text-align: center;
+	button {
+		padding: 10px 40px 8px;
+		font-family: "Gilroy-Extrabold";
+		font-size: 15px;
+		background-color: #ff6900;
+		color: white;
+		border: none;
+		box-shadow: 0 5px 9px rgba(0, 0, 0, 0.18);
+		text-transform: uppercase;
+		cursor: pointer;
+		transition: opacity 0.2s;
+		&:hover {
+			transition: opacity 0.2s;
+			opacity: 0.8;
+		}
+	}
+}
