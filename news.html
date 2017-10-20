@@ -20,7 +20,9 @@
 <!-- open .header-->
 <header class="news-header">
 	<div class="container">
-		<div class="header__ad"></div>
+		<div class="header__ad">
+			<img src="img/header-ad.jpg" alt="">
+		</div>
 		<div class="header__head">
 			<div class="header__logo">
 				<a href="index.html">
@@ -39,7 +41,59 @@
                 <span></span>
             </div>
 			<nav class="header__nav-menu">
-				<a href="news.html">Новости</a>
+				<div class="header__news-menu">
+					<a href="news.html">Новости </a>
+					<ul class="header__news-nav">
+						<li>
+							<a href="#">События</a>
+						</li>
+						<li>
+							<a href="#">Наука</a>
+						</li>
+						<li>
+							<a href="#">Политика</a>
+						</li>
+						<li>
+							<a href="#">Экономика</a>
+						</li>
+						<li>
+							<a href="#">Общество</a>
+						</li>
+						<li>
+							<a href="#">Бизнес</a>
+						</li>
+						<li>
+							<a href="#">Культура</a>
+						</li>
+						<li>
+							<a href="#">Спорт</a>
+						</li>
+						<li>
+							<a href="#">Автомир</a>
+						</li>
+						<li>
+							<a href="#">Технологии</a>
+						</li>
+						<li>
+							<a href="#">Спецпроекты</a>
+						</li>
+						<li>
+							<a href="#">Медицина</a>
+						</li>
+						<li>
+							<a href="#">Кино</a>
+						</li>
+						<li>
+							<a href="#">Красота</a>
+						</li>
+						<li>
+							<a href="#">Экология</a>
+						</li>
+						<li>
+							<a href="#">Образование</a>
+						</li>
+					</ul>
+				</div>
 				<a class="tv" href="tv.html"><img src="img/tv.png" alt="TV"></a>
 				<a href="vide.html">Видео</a>
 				<a href="publications.html">Публикации</a>
@@ -82,13 +136,6 @@
 	</div>
 </header>
 <!-- close .header -->
-<script>
-	var close = document.getElementsByClassName('header__close')[0];
-	var live = document.getElementsByClassName('header__live')[0];
-	close.onclick = function() {
-		live.style.display = 'none';
-	}
-</script>
 <!-- end header-news.html-->
 
 <!-- main container-->
@@ -100,9 +147,9 @@
 			<header class="header__content">
 				<div class="news-main__title">
 					<h2>Новости</h2>
-					<div class="select">
+					<div id="select">
 						<span class="active-country">Страны Азии</span>
-						<ul>
+						<ul class="country-select">
 							<li><span class="country">Абхазия</span></li>
 							<li><span class="country">Азербайджан</span></li>
 							<li><span class="country">Армения</span></li>
@@ -159,7 +206,7 @@
 				</div>
 				<div class="news-main__nav">
 					<nav class="news-main__nav-menu">
-						<a class="active" href="#">Политика</a>
+						<a class="active-news" href="#">Политика</a>
 						<a href="#">Общество</a>
 						<a href="#">Экономика и бизнес</a>
 						<a href="#">Наука и образование</a>
@@ -679,6 +726,33 @@
 		</arcticle>
 	</section>
 </main>
+
+<script type="text/javascript">
+	
+	// селект стран
+
+	var countrySelect = document.getElementById('select');
+	var allCountry = document.getElementsByClassName('country');
+	var activeCountry = document.getElementsByClassName('active-country')[0];
+	var selectedCountry = document.getElementsByClassName('selected-country')[0];
+
+	countrySelect.onclick = function() {
+		var countryList = document.getElementsByClassName('country-select')[0];
+		activeCountry.classList.toggle('opened-list');
+		countryList.classList.toggle('expand-country');
+	}
+
+	function replaceCountry() {
+		var country;
+		for(var i = 0; i < allCountry.length; i++) {
+			allCountry[i].onclick = function() {
+				activeCountry.innerHTML = activeCountry.innerHTML.replace(activeCountry.innerHTML, this.innerHTML);
+			}
+		}
+	}
+	replaceCountry();
+
+</script>
 <!-- end content-news.html-->
 
 <!-- close container-->
@@ -739,6 +813,7 @@
 <script src='js/jquery-3.2.1.min.js' type="text/javascript"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/slick.js"></script>
+<script src="js/custom.js"></script>
 <script>
 $(document).ready(function(){
 	$('.slider__top-news').slick({
@@ -848,29 +923,6 @@ $(document).ready(function(){
 });
 </script>
 
-<script>
-	function openTab(evt, tabNum) {
-	    // Declare all variables
-	    var i, tabcontent, tablinks;
-
-	    // Get all elements with class="tabcontent" and hide them
-	    tabcontent = document.getElementsByClassName("tabcontent");
-	    for (i = 0; i < tabcontent.length; i++) {
-	        tabcontent[i].style.display = "none";
-	    }
-
-	    // Get all elements with class="tablinks" and remove the class "active"
-	    tablinks = document.getElementsByClassName("tablinks");
-	    for (i = 0; i < tablinks.length; i++) {
-	        tablinks[i].className = tablinks[i].className.replace(" active", "");
-	    }
-
-	    // Show the current tab, and add an "active" class to the link that opened the tab
-	    document.getElementById(tabNum).style.display = "block";
-	    evt.currentTarget.className += " active";
-	}
-	document.getElementById("defaultOpen").click();
-</script>
 </body>
 </html>
 <!-- end html_close.html-->

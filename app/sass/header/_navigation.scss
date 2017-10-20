@@ -22,8 +22,12 @@
 			visibility: hidden;
 		}
 
+		.header__news-menu {
+			padding: 24px 0 15px;
+		}
+
 		a {
-			padding: 26px 0 15px;
+			padding: 25px 0 15px;
 			font-family: 'Gilroy-Bold', sans-serif;
 			font-size: 14px;
 			text-transform: uppercase;
@@ -46,6 +50,41 @@
 		.tv {
 			padding-top: 22px;
 			padding-bottom: 8px;
+		}
+
+		.header__news-nav {
+			width: 20%;
+			max-height: 250px;
+			display: none;
+			position: absolute;
+			list-style: none;
+			padding: 20px;
+			background-color: white;
+			box-shadow: 0 3px 16px rgba(0, 0, 0, 0.3);
+			li {
+				width: 50%;
+				height: 15px;
+				margin: 5px 0;
+				a {
+					padding: 5px 0;
+					font-family: 'Gilroy-Regular', sans-serif;
+					font-size: 14px;
+					color: #040000;
+					border: none;
+					text-transform: none;
+					&:hover, &:active, &:focus {
+						font-family: 'Gilroy-Black', sans-serif;
+						border: none;
+						color: #f06226;
+					}
+				}
+			}
+		}
+
+		.newsDropdown {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
 		}
 	}
 
