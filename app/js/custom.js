@@ -5,18 +5,3 @@
 		live.style.display = 'none';
 	}
 
-	// выпадающее меню при ховере на "новости"
-	document.getElementsByClassName('header__news-menu')[0].onmouseover = function() {
-		mouseOver()
-	};
-	document.getElementsByClassName('header__news-menu')[0].onmouseout = function() {
-		mouseOut()
-	};
-
-	function mouseOver() {
-		document.getElementsByClassName('header__news-nav')[0].classList.add('newsDropdown');
-	}
-
-	function mouseOut() {
-		document.getElementsByClassName('header__news-nav')[0].classList.remove('newsDropdown');
-	}

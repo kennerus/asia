@@ -29,6 +29,7 @@ var postcss = require('gulp-postcss'),//Блиотека-парсер стиле
     sorting = require('postcss-sorting'),
     fontmagic = require('postcss-font-magician'),
     fixes = require('postcss-fixes');
+var util = require('gulp-util');
 
 gulp.task('css-libs', function () { // Создаем таск css-libs
     var processors = [

@@ -1,8 +1,9 @@
 .main .container,
-.news-main .container {
+.news-main .container,
+.single-news .container {
 	padding: 30px 40px;
 	display: flex;
-	background: linear-gradient(to bottom, #f6f4f9, transparent);
+	background: linear-gradient(to bottom, white, transparent);
 	background-size: 100% 400px;
 	background-repeat: no-repeat;
 	@include breakpoint(max-width 992px) {

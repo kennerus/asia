@@ -1,0 +1,145 @@
+.single-news {
+	color: #060000;
+	figure {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.header__content {
+	h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+		border: none;
+	}
+}
+
+.featured-img {
+	margin: 0;
+	.photographer {
+		font-family: 'Roboto-Regular', sans-serif;
+		font-size: 11px;
+		text-align: right;
+		letter-spacing: 1.1px;
+	}
+}
+
+.bread-crumbs {
+	width: 235px;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 0;
+		list-style: none;
+		a {
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+			color: #060000;
+			transition: opacity 0.2s;
+			&:hover, &:active, &:focus {
+				transition: opacity 0.2s;
+				opacity: 0.8;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.single-news__content {
+	padding: 30px;
+	background-color: white;
+	.single-title {
+		margin-top: 0;
+		font-family: "Roboto-Black", sans-serif;
+		font-weight: normal;
+		font-size: 33px;
+		text-transform: uppercase;
+	}
+
+	.single-news__date {
+		max-width: 450px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		font-family: "Myriad", sans-serif;
+		font-size: 15px;
+		span {
+			img {
+				margin-right: 5px;
+				position: relative;
+				top: 2px;
+			}
+		}
+	}
+}
+
+.tags {
+	min-height: 100px;
+	margin-top: 2px;
+	padding: 30px;
+	background-color: white;
+	h3 {
+		font-family: 'Roboto-Bold', sans-serif;
+		font-weight: normal;
+		font-size: 18px;
+	}
+
+	.tag-links {
+		display: flex;
+		flex-wrap: wrap;
+		a {
+			margin-right: 5px;
+			margin-top: 5px;
+			padding: 9px 15px 5px;
+			font-family: "Myriad", sans-serif;
+			font-weight: 700;
+			font-size: 10px;
+			color: #01060b;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			border-radius: 2px;
+			border: 1px solid #ff6900;
+			&:hover, &:active, &:focus {
+				background-color: #F6F4F9;
+			}
+		}
+	}
+}
+
+.social-likes {
+	min-height: 100px;
+	padding: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.read-also {
+	position: relative;
+	.single-news__title {
+		position: relative;
+		.single-news__arrows {
+			position: absolute;
+			left: 200px;
+			bottom: 10px;
+		}
+	}
+}
+
+.read-also__slider.news-blocks .slick-track {
+	.small-block {
+		margin: 5px 5px;
+	}
+}
+
+
+.partners-ad,
+.direct-ad {
+	margin-top: 30px;
+	img {
+		width: 100%;
+	}
+}
