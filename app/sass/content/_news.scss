@@ -1,10 +1,9 @@
 .header__ad {
 	width: 100%;
-	max-height: 90px;
+	height: 90px;
 	margin-top: 12.4vw;
-	img {
-		width: 100%;
-	}
+	background-image: url(../img/header-ad.jpg);
+	background-position: 50%;
 }
 
 .news-header .header__head {
@@ -26,6 +25,9 @@
 	#select {
 		margin-right: 20px;
 		margin-bottom: 10px;
+		@include breakpoint(max-width 576px) {
+			margin-right: 5px;
+		}
 		.active-country {
 			padding-right: 25px;
 			font-family: 'Roboto-Bold', sans-serif;
@@ -41,6 +43,12 @@
 				bottom: 16px;
 				background-image: url(../img/arrow-down.png);
 				background-repeat: no-repeat;
+			}
+			@include breakpoint(max-width 576px) {
+				padding-right: 5px;
+				&:after {
+					margin-left: 5px;
+				}
 			}
 		}
 				.opened-list {
@@ -62,13 +70,16 @@
 				padding: 0;
 				margin: 5px;
 				cursor: pointer;
+				line-height: 1.2;
 				@include breakpoint(max-width 768px) {
 					width: 30%;
 					height: auto;
 				}
+
 				@include breakpoint(max-width 576px) {
 					width: 50%;
 				}
+
 				.country {
 					padding: 5px 0;
 					font-family: 'Gilroy-Regular', sans-serif;
@@ -96,10 +107,10 @@
 			flex-wrap: wrap;
 			z-index: 2;
 			@include breakpoint(max-width 768px) {
-				height: 75vh;
+				height: 100vh;
 			}
 			@include breakpoint(max-width 576px) {
-				height: 130vh;
+				height: 150vh;
 			}
 		}
 	}
@@ -109,9 +120,10 @@
 	.news-main__nav-menu {
 		margin: 5px 0;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
+		flex-wrap: wrap;
 		a {
-			padding: 7px 5px 5px	;
+			padding: 7px 5px 5px;
 			font-family: 'Roboto-Bold', sans-serif;
 			font-size: 12px;
 			text-transform: uppercase;
@@ -162,6 +174,8 @@
 
 		.big-block__title,
 		.big-block__title-top {
+			width: 100%;
+			box-sizing: border-box;
 			height: 30%;
 			padding: 10px;
 			display: flex;
@@ -182,6 +196,11 @@
 
 			h4{
 				margin: 0;
+				@include breakpoint(max-width 576px) {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
 				a {
 					font-family: 'Gilroy-Bold',sans-serif;
 					font-weight: normal;
@@ -238,6 +257,9 @@
 			bottom: 0;
 			background: linear-gradient(to top, hsla(240, 81%, 6%, 0.75), transparent);
 			box-sizing: border-box;
+			@include breakpoint(max-width 576px) {
+				bottom: 4px;
+			}
 			h4 {
 				margin: 0;
 				line-height: .9;
