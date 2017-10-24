@@ -80,6 +80,9 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	.content__contests {
+		margin-top: 20px;;
+	}
 }
 
 .contests__article {
@@ -113,6 +116,15 @@
 		font-family: "Roboto-Bold";
 		font-weight: normal;
 		font-size: 14px;
+		a {
+			color: black;
+			transition: opacity 0.2s;
+			&:hover, &:active, &:focus {
+				transition: opacity 0.2s;
+				opacity: 0.8;
+				text-decoration: underline;
+			}
+		}
 	}
 
 	.contests__describe {
@@ -137,8 +149,12 @@
 }
 
 .contests__news-slider {
+	margin: 5px auto;
 	.small-block {
 		margin: 0 5px;
+	}
+	@include breakpoint(max-width 576px) {
+		width: 89%;
 	}
 }
 
