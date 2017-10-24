@@ -49,6 +49,27 @@
 .single-news__content {
 	padding: 30px;
 	background-color: white;
+	position: relative;
+	line-height: 1.5;
+	.social-likes_vertical {
+		width: 80px;
+		position: absolute;
+		left: 0;
+		flex-direction: column;
+		transform: translateX(-42%);
+		z-index: -1;
+		.social-likes__widget {
+			min-width: 80px;
+			width: 80px;
+			display: flex;
+			cursor: pointer;
+		}
+	}
+
+	.social-likes_vertical.active-share {
+		transform: translateX(-78%);
+	}
+
 	.single-title {
 		margin-top: 0;
 		font-family: "Roboto-Black", sans-serif;

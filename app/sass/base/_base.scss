@@ -18,6 +18,10 @@ body{
     // background-size: 100%;
 }
 
+::placeholder {
+    opacity: 1;
+}
+
 a {
     text-decoration: none;
     &:hover, &:focus, &:active{
@@ -54,7 +58,8 @@ textarea{
 }
 
 
-.news-main__title {
+.news-main__title,
+#contests__form {
     position: relative;
     display: flex;
     justify-content: space-between;
