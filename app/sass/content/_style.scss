@@ -8,7 +8,7 @@
 	padding: 30px 30px 30px 40px;
 	display: flex;
 	background: linear-gradient(to bottom, white, transparent);
-	background-size: 100% 400px;
+	background-size: 100% 50%;
 	background-repeat: no-repeat;
 	@include breakpoint(max-width 992px) {
 		padding: 20px 10px;
@@ -68,13 +68,14 @@
 				h3 {
 					max-width: 450px;
 					margin: 10px 0 0;
+					text-transform: uppercase;
 				}
 
 				a {
 					font-family: 'Gilroy-Semibold', sans-serif;
 					font-weight: normal;
 					font-size: 19px;
-					text-transform: uppercase;
+					text-transform:  case;
 					line-height: 24px;
 					letter-spacing: 0.5px;
 					color: white;
@@ -88,10 +89,10 @@
 
 	.news {
 		color: white;
-		text-transform: uppercase;
 
 		h3 {
 			font-family: 'Gilroy-Bold', sans-serif;
+			text-transform: uppercase;
 		}
 
 		.news__latest {
@@ -434,7 +435,7 @@
 		.publications__left,
 		.publications__right {
 			position: relative;
-			max-width: 410px;
+			max-width: 405px;
 			margin: 0 auto;
 			display: flex;
 			flex-direction: column;
@@ -459,9 +460,9 @@
 		.first-news,
 		.second-news {
 			position: relative;
-			width: 200px;
+			width: 195px;
 			color: white;
-			text-transform: uppercase;
+			
 			@include breakpoint(max-width 576px) {
 				width: 100%;
 				margin: 10px 0;
@@ -475,6 +476,7 @@
 				font-family: 'Gilroy-Black', sans-serif;
 				font-weight: normal;
 				font-size: 12px;
+				text-transform: uppercase;
 			}
 
 			.news__slide-title {
@@ -520,7 +522,6 @@
 		.publications__slider {
 			position: relative;
 			color: white;
-			text-transform: uppercase;
 			h3 {
 				margin: 0;
 				padding: 7px 20px 5px;
@@ -530,6 +531,7 @@
 				font-family: 'Gilroy-Black', sans-serif;
 				font-weight: normal;
 				font-size: 13px;
+				text-transform: uppercase;
 			}
 
 			.top-news__date {
@@ -578,6 +580,7 @@
 					font-size: 13px;
 					line-height: normal;
 					letter-spacing: normal;
+					text-transform: none;
 				}
 			}
 		}
@@ -652,7 +655,6 @@
 			font-family: 'Gilroy-Black', sans-serif;
 			font-weight: normal;
 			font-size: 13px;
-			text-transform: uppercase;
 			color: white;
 		}
 	}

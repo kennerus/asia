@@ -1,0 +1,26 @@
+.event__date {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.events {
+	button {
+		width: 60%;
+		margin: 0 auto;
+		padding: 5px 0;
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 4px;
+		font-family: "Roboto-Black";
+		font-size: 12px;
+		text-transform: uppercase;
+		background-color: rgba(0,0,0,0.7);
+		color: white;
+		border: none;
+		z-index: 2;
+		cursor: pointer;
+	}
+}
