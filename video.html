@@ -95,7 +95,7 @@
 				<a class="tv" href="tv.html"><img src="img/tv.png" alt="TV"></a>
 				<a class="active-rubric" href="video.html">Видео</a>
 				<a href="publications.html">Публикации</a>
-				<a href="contries.html">Страны Азии</a>
+				<a href="asia.html">Страны Азии</a>
 				<a href="events.html">События</a>
 				<a href="special.html">Спецпроекты</a>
 				<a href="contests.html">Конкурсы</a>
@@ -271,7 +271,7 @@
 			<div class="video-blocks">
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -285,7 +285,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -299,7 +299,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -313,7 +313,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -366,7 +366,7 @@
 			<div class="video-blocks">
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -380,7 +380,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -394,7 +394,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -408,7 +408,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -449,7 +449,7 @@
 			<div class="video-blocks">
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -463,7 +463,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -477,7 +477,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -491,7 +491,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -527,7 +527,7 @@
 			<div class="video-blocks">
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -541,7 +541,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -555,7 +555,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -569,7 +569,7 @@
 				</div>
 				<div class="video__blocks">
 					<div class="video__video">
-						<img src="../img/video.jpg" alt="">
+						<img src="img/video.jpg" alt="">
 						<p>3:09:12</p>
 					</div>
 					<div class="video__blocks-title">
@@ -985,6 +985,47 @@ $(document).ready(function(){
 	$('.contests__news-slider').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.asia__slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.asia__slider-nav',
+		infinite: false
+	});
+	$('.asia__slider-nav').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		dots: false,
+		asNavFor: '.asia__slider',
+		focusOnSelect: true,
 		infinite: false,
 		responsive: [
 			{

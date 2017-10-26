@@ -1,0 +1,308 @@
+.asia {
+	p {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+	.asia__excerpt,
+	.asia__text {
+		max-width: 780px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 5px;
+	}
+}
+.asia__head {
+	box-shadow: 1px 9px 16px rgba(0, 0, 0, 0.1);
+
+	.asia__map {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.asia__info {
+	padding: 30px;
+	background-color: white;
+	box-shadow: 1px 9px 16px rgba(0, 0, 0, 0.1);
+
+	h3 {
+		margin-top: 0;
+		margin-left: 5px;
+		font-family: 'Roboto-Bold', sans-serif;
+		font-size: 22px;
+		color: #ff6900;
+		text-transform: uppercase;
+	}
+
+	.country-list {
+		max-height: 450px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		list-style: none;
+
+		li {
+			margin: 3px 0;
+
+			span {
+				position: relative;
+				&:before {
+					content: '';
+					width: 26px;
+					height: 14px;
+					position: absolute;
+					left: -35px;
+					bottom: 3px;
+					background-repeat: no-repeat;
+				}
+			}
+
+			a {
+				font-size: 15px;
+				color: black;
+			}
+		}
+
+		.abh:before {
+			background-image: url(../img/22px-Flag_of_Abkhazia.png);
+		}
+
+		.azer:before {
+			background-image: url(../img/22px-Flag_of_Azerbaijan.png);
+		}
+
+		.arm:before {
+			background-image: url(../img/22px-Flag_of_Armenia.png);
+		}
+
+		.afg:before {
+			background-image: url(../img/22px-Flag_of_Afghanistan.png);
+		}
+		
+		.bangl:before {
+			background-image: url(../img/22px-Flag_of_Bangladesh.png);
+		}
+
+		.bahr:before {
+			background-image: url(../img/22px-Flag_of_Bahrain.png);
+		}
+
+		.brun:before {
+			background-image: url(../img/22px-Flag_of_Brunei.png);
+		}
+
+		.butan:before {
+			background-image: url(../img/22px-Flag_of_Bhutan.png);
+		}
+
+		.timor:before {
+			background-image: url(../img/22px-Flag_of_East_Timor.png)
+		}
+
+		.viet:before {
+			background-image: url(../img/22px-Flag_of_Vietnam.png);
+		}
+
+		.gruz:before {
+			background-image: url(../img/22px-Flag_of_Georgia.png);
+		}
+
+		.izr:before {
+			background-image: url(../img/22px-Flag_of_Israel.png);
+		}
+
+		.ind:before {
+			background-image: url(../img/22px-Flag_of_India.png);
+		}
+
+		.indon:before {
+			background-image: url(../img/22px-Flag_of_Indonesia.png);
+		}
+
+		.iord:before {
+			background-image: url(../img/22px-Flag_of_Jordan.png);
+		}
+
+		.iraq:before {
+			background-image: url(../img/22px-Flag_of_Iraq.png);
+		}
+
+		.iran:before {
+			background-image: url(../img/22px-Flag_of_Iran.png);
+		}
+
+		.iem:before {
+			background-image: url(../img/22px-Flag_of_Yemen.png);
+		}
+
+		.kaz:before {
+			background-image: url(../img/22px-Flag_of_Kazakhstan.png);
+		}
+
+		.kabo:before {
+			background-image: url(../img/22px-Flag_of_Cambodia.png);
+		}
+
+		.katar:before {
+			background-image: url(../img/22px-Flag_of_Qatar.png);
+		}
+
+		.kipr:before {
+			background-image: url(../img/22px-Flag_of_Cyprus.png);
+		}
+
+		.kirg:before {
+			background-image: url(../img/22px-Flag_of_Kyrgyzstan.png);
+		}
+
+		.china:before {
+			background-image: url(../img/22px-Flag_of_the_Peoples_Republic_of_China.png);
+		}
+
+		.kndr:before {
+			background-image: url(../img/22px-Flag_of_North_Korea.png);
+		}
+
+		.kuv:before {
+			background-image: url(../img/22px-Flag_of_Kuwait.png);
+		}
+
+		.laos:before {
+			background-image: url(../img/22px-Flag_of_Laos.png);
+		}
+
+		.livan:before {
+			background-image: url(../img/22px-Flag_of_Lebanon.png);
+		}
+
+		.mal:before {
+			background-image: url(../img/22px-Flag_of_Malaysia.png);
+		}
+
+		.maldiv:before {
+			background-image: url(../img/22px-Flag_of_Malaysia.png);
+		}
+
+		.mong:before {
+			background-image: url(../img/22px-Flag_of_Mongolia.png);
+		}
+
+		.myan:before {
+			background-image: url(../img/22px-Flag_of_Myanmar.png);
+		}
+
+		.nepal:before {
+			background-image: url(../img/16px-Flag_of_Nepal.png);
+		}
+
+		.oae:before {
+			background-image: url(../img/22px-Flag_of_the_United_Arab_Emirates.png);
+		}
+
+		.oman:before {
+			background-image: url(../img/22px-Flag_of_Oman.png);
+		}
+
+		.pakis:before {
+			background-image: url(../img/22px-Flag_of_Pakistan.png);
+		}
+
+		.pales:before {
+			background-image: url(../img/22px-Flag_of_Palestine.png);
+		}
+
+		.korea:before {
+			background-image: url(../img/22px-Flag_of_South_Korea.png);
+		}
+
+		.rus:before {
+			background-image: url(../img/22px-Flag_of_Russia.png);
+		}
+
+		.saud:before {
+			background-image: url(../img/22px-Flag_of_Saudi_Arabia.png);
+		}
+
+		.sing:before {
+			background-image: url(../img/22px-Flag_of_Singapore.png);
+		}
+
+		.sir:before {
+			background-image: url(../img/22px-Flag_of_Syria.png);
+		}
+
+		.taj:before {
+			background-image: url(../img/22px-Flag_of_Tajikistan.png);
+		}
+
+		.thai:before {
+			background-image: url(../img/22px-Flag_of_Thailand.png);
+		}
+
+		.turkm:before {
+			background-image: url(../img/22px-Flag_of_Turkmenistan.png);
+		}
+
+		.turk:before {
+			background-image: url(../img/22px-Flag_of_Turkey.png);
+		}
+
+		.uzb:before {
+			background-image: url(../img/22px-Flag_of_Uzbekistan.png);
+		}
+
+		.fil:before {
+			background-image: url(../img/22px-Flag_of_the_Philippines.png);
+		}
+
+		.shri:before {
+			background-image: url(../img/22px-Flag_of_Sri_Lanka.png);
+		}
+
+		.oset:before {
+			background-image: url(../img/22px-Flag_of_South_Ossetia.png);
+		}
+
+		.jap:before {
+			background-image: url(../img/22px-Flag_of_Japan.png);
+		}
+	}
+}
+
+.asia__slide {
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+
+	.asia__slide-title {
+		position: absolute;
+		bottom: 20px;
+		left: 30px;
+		color: white;
+		z-index: 2;
+		h3 {
+			margin: 0;
+			font-family: 'Roboto-Bold', sans-serif;
+			font-weight: normal;
+			font-size: 19px;
+			text-transform: uppercase;
+		}
+
+		p {
+			margin: 5px 0;
+			font-size: 13px;
+		}
+	}
+}
+
+.asia__slider-nav {
+	margin-top: 15px;
+
+	.asia__slide {
+		margin: 0 3px;
+	}
+}
