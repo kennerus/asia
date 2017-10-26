@@ -28,7 +28,7 @@
 		padding: 0;
 	}
 	h2 {
-		margin-top: 45px;
+		margin-top: 0;
 		margin-bottom: 10px;
 		font-family: 'Roboto-Bold', sans-serif;
 		font-weight: normal;
@@ -695,6 +695,7 @@
 .sidebar__events,
 .content__events {
 	width: 240px;
+	height: 270px;
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 1px 9px 16px hsla(0, 0, 0, 0.1);
