@@ -397,7 +397,6 @@
 					<div class="contests__article" data-btn="06">
 						<div class="contests__preview events">
 							<img src="img/events.jpg" alt="">
-							<button data-btn="06" href="#">Показать на карте</button>
 						</div>
 						<div class="contests__title">
 							<h3 class="event__date">Москва / 21 ноября, 20:00 <br> Цирк Никулина</h3>
@@ -852,7 +851,7 @@
 
 <script>
 	var modals = document.getElementsByClassName('modal');
-	var btns = document.getElementsByClassName('modalBtn');
+	var btns = document.getElementsByClassName('contests__article');
 	var close = document.getElementsByClassName('close');
 
 	function getModal() {
@@ -873,30 +872,24 @@
 	for(var i = 0; i < btns.length; i++) {
 		btns[i].onclick = function(event) {
 			var btnOnClick = this.getAttribute('data-btn');
-			var modalsAtrsArr = getModal();
-			for(var i = 0; i < modalsArr.length; i++) {
-				if(in_array(btnOnClick, modalsAtrsArr)) {
-					modalsArr[i].style.display = 'block';
-				}
-				// else {
-				// 	modals[i].style.display = 'none';
-				// }
-			}
+			var modal = this.querySelector('.modal');
+			modal.classList.add('activeModal');
 		}
 	}
 
-	// function closeModal() {
-	// 	for(var i = 0; i < close.length; i++) {
-	// 		close[i].onclick = function(event) {
-	// 			modals.style.display = 'none';
-	// 		}
-	// 	}
-	// }
-
+	function closeModal() {
+		for(var i = 0; i < close.length; i++) {
+			close[i].onclick = function() {
+				var getModal = document.getElementsByClassName('activeModal')[0];
+				getModal.classList.remove('activeModal');
+			}
+		}
+	}
+	closeModal();
 
 // When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
-	    for (var i = 0; i <modals.length; i++) {
+	    for (var i = 0; i < modals.length; i++) {
 	    	if (event.target == modals[i]) {
 		        modals[i].style.display = "none";
 		    }
