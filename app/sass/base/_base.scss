@@ -79,7 +79,8 @@ textarea{
 }
 
 .news-main__title,
-#contests__form {
+#contests__form,
+.embassies__city {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -120,7 +121,7 @@ textarea{
                 }
             }
         }
-                .opened-list {
+        .opened-list {
             &:after {
                 content: '';
                 background-image: url(../img/arrow-up.png);

@@ -145,14 +145,15 @@
 		.single-news__arrows {
 			position: absolute;
 			left: 230px;
-			bottom: 15px;
+			top: 15px;
 		}
 	}
 }
 
-.read-also__slider.news-blocks .slick-track {
+.read-also__slider.news-blocks .slick-track,
+.read-also__slide.news-blocks .slick-track {
 	.small-block {
-		margin: 5px 5px;
+		margin: 5px;
 	}
 }
 
