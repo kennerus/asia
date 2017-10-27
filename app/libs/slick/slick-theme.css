@@ -123,14 +123,14 @@
 .video__slider .slick-prev,
 .contests__news-slider .slick-prev,
 .asia__slider-nav .slick-prev {
-    left: -23px;
+    left: -25px;
 }
 
 .news__slider .slick-next,
 .video__slider .slick-next,
 .contests__news-slider .slick-next,
 .asia__slider-nav .slick-next {
-    right: -23px;
+    right: -25px;
 }
 
 .news__slider [dir='rtl'] .slick-prev,

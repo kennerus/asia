@@ -189,8 +189,8 @@
 						</div>
 						<img src="img/news-01.jpg" alt="">
 						<div class="news__latest-title">
-							<span class="news__latest-views"><i class="demo-icon icon-eye"></i>13</span>
 							<span class="news__latest-date">4 часа назад</span>
+							<span class="news__latest-views"><i class="demo-icon icon-eye"></i>13</span>
 							<h4>
 							<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
 							</h4>
@@ -202,8 +202,8 @@
 						</div>
 						<img src="img/news-02.jpg" alt="">
 						<div class="news__latest-title">
-							<span class="news__latest-views"><i class="demo-icon icon-eye"></i>13</span>
 							<span class="news__latest-date">4 часа назад</span>
+							<span class="news__latest-views"><i class="demo-icon icon-eye"></i>13</span>
 							<h4>
 							<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
 							</h4>
@@ -475,8 +475,8 @@
 								<img src="img/publish-01.jpg" alt="">
 								<div class="top-news__describe">
 									<div>
+										<span class="news__latest-date">4 часа назад</span>
 										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
-										<span class="top-news__date">4 часа назад</span>
 									</div>
 									<h4>
 									<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
@@ -488,8 +488,8 @@
 								<img src="img/publish-01.jpg" alt="">
 								<div class="top-news__describe">
 									<div>
-										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 										<span class="top-news__date">4 часа назад</span>
+										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 									</div>
 									<h4>
 									<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
@@ -501,8 +501,8 @@
 								<img src="img/publish-01.jpg" alt="">
 								<div class="top-news__describe">
 									<div>
-										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 										<span class="top-news__date">4 часа назад</span>
+										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 									</div>
 									<h4>
 									<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
@@ -514,8 +514,8 @@
 								<img src="img/publish-01.jpg" alt="">
 								<div class="top-news__describe">
 									<div>
-										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 										<span class="top-news__date">4 часа назад</span>
+										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 									</div>
 									<h4>
 									<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
@@ -590,8 +590,8 @@
 								<img src="img/publish-06.jpg" alt="">
 								<div class="top-news__describe">
 									<div>
-										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 										<span class="top-news__date">4 часа назад</span>
+										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 									</div>
 									<h4>
 									<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
@@ -603,8 +603,8 @@
 								<img src="img/publish-06.jpg" alt="">
 								<div class="top-news__describe">
 									<div>
-										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 										<span class="top-news__date">4 часа назад</span>
+										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 									</div>
 									<h4>
 									<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
@@ -616,8 +616,8 @@
 								<img src="img/publish-06.jpg" alt="">
 								<div class="top-news__describe">
 									<div>
-										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 										<span class="top-news__date">4 часа назад</span>
+										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 									</div>
 									<h4>
 									<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
@@ -629,8 +629,8 @@
 								<img src="img/publish-06.jpg" alt="">
 								<div class="top-news__describe">
 									<div>
-										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 										<span class="top-news__date">4 часа назад</span>
+										<span class="top-news__views"><i class="demo-icon icon-eye"></i>13</span>
 									</div>
 									<h4>
 									<a href="#">Путин встретился с премьер-министром Японии С. Абэ в рамках Восточного экономического форума</a>
@@ -870,6 +870,37 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		infinite: false,
 		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.read-also__slider').slick({
+		appendArrows: $('.single-news__arrows'),
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		infinite: false,
 		responsive: [
 			{
 				breakpoint: 992,

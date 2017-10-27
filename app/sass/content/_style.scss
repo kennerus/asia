@@ -227,20 +227,19 @@
 			h4 {
 				margin: 0;
 				line-height: 0.9;
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
+
 				@include breakpoint(max-width 768px) {
 					white-space: normal;
 					overflow: auto;
 					text-overflow: inherit;
 				}
+
 				a {
 					color: white;
 					font-family: "Gilroy-Semibold", sans-serif;
 					font-weight: normal;
 					font-size: 11px;
-
+					line-height: 10px;
 				}
 			}
 		}
@@ -501,9 +500,6 @@
 			h4 {
 				margin: 0;
 				line-height: 0.9;
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
 				@include breakpoint(max-width 576px) {
 					white-space: normal;
 					overflow: auto;
@@ -513,8 +509,8 @@
 					color: white;
 					font-family: "Gilroy-Semibold", sans-serif;
 					font-weight: normal;
-					font-size: 9px;
-					line-height: 12px;
+					font-size: 11px;
+					line-height: 10px;
 				}
 			}
 		}
@@ -565,17 +561,26 @@
 			div {
 				width: 80%;
 				display: flex;
-				justify-content: space-between;
+				align-items: center;
+
+				.top-news__date {
+					position: relative;
+					top: 1px;
+					margin-left: 5px;
+				}
 			}
+
 			h4 {
 				width: 80%;
 				margin: 0;
+
 				@include breakpoint(max-width 576px) {
 					width: 180px;
 					white-space: nowrap;
 					overflow: hidden;
 					text-overflow: ellipsis;
 				}
+
 				a {
 					font-size: 13px;
 					line-height: normal;

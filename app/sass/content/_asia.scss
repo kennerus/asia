@@ -25,6 +25,16 @@
 	padding: 30px;
 	background-color: white;
 	box-shadow: 1px 9px 16px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+
+	@include breakpoint(max-width 768px) {
+		padding: 15px;
+	}
+
+	@include breakpoint(max-width 576px) {
+		width: 100%;
+		padding: 10px;
+	}
 
 	h3 {
 		margin-top: 0;
@@ -43,8 +53,21 @@
 		flex-wrap: wrap;
 		list-style: none;
 
+		@include breakpoint(max-width 768px) {
+			max-height: 700px;
+		}
+
+		@include breakpoint(max-width 576px) {
+			max-height: 100%;
+			align-items: center;
+		}
+
 		li {
 			margin: 3px 0;
+
+			@include breakpoint(max-width 576px) {
+				width: 100%;
+			}
 
 			span {
 				position: relative;
@@ -62,6 +85,12 @@
 			a {
 				font-size: 15px;
 				color: black;
+				transition: opacity 0.2s;
+				&:hover, &active, &:focus {
+					transition: opacity 0.2s;
+					opacity: 0.8;
+					text-decoration: underline;
+				}
 			}
 		}
 
@@ -182,7 +211,7 @@
 		}
 
 		.maldiv:before {
-			background-image: url(../img/22px-Flag_of_Malaysia.png);
+			background-image: url(../img/22px-Flag_of_Maldives.png);
 		}
 
 		.mong:before {
@@ -301,6 +330,11 @@
 
 .asia__slider-nav {
 	margin-top: 15px;
+
+	@include breakpoint(max-width 768px) {
+		width: 87%;
+		margin: 15px auto;
+	}
 
 	.asia__slide {
 		margin: 0 3px;
