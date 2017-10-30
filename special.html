@@ -11,6 +11,7 @@
     <link href="css/libs.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min">
 </head>
 <body>
 <!-- open .header -->
@@ -144,63 +145,7 @@
 		<div class="content">
 			<header class="header__content">
 				<div class="news-main__title">
-					<h2>Публикации</h2>
-					<div id="select">
-						<span class="active-country">Выберите страну</span>
-						<ul class="country-select">
-							<li><span class="country">Абхазия</span></li>
-							<li><span class="country">Азербайджан</span></li>
-							<li><span class="country">Армения</span></li>
-							<li><span class="country">Афганистан</span></li>
-							<li><span class="country">Бангладеш</span></li>
-							<li><span class="country">Бахрейн</span></li>
-							<li><span class="country">Бруней</span></li>
-							<li><span class="country">Бутан</span></li>
-							<li><span class="country">Восточный Тимор</span></li>
-							<li><span class="country">Вьетнам</span></li>
-							<li><span class="country">Грузия</span></li>
-							<li><span class="country">Израиль</span></li>
-							<li><span class="country">Индия</span></li>
-							<li><span class="country">Индонезия</span></li>
-							<li><span class="country">Иордания</span></li>
-							<li><span class="country">Ирак</span></li>
-							<li><span class="country">Иран</span></li>
-							<li><span class="country">Йемен</span></li>
-							<li><span class="country">Казахстан</span></li>
-							<li><span class="country">Кабоджа</span></li>
-							<li><span class="country">Катар</span></li>
-							<li><span class="country">Кипр</span></li>
-							<li><span class="country">Киргизя</span></li>
-							<li><span class="country">Китай</span></li>
-							<li><span class="country">КНДР (Северная Корея)</span></li>
-							<li><span class="country">Кувейт</span></li>
-							<li><span class="country">Лаос</span></li>
-							<li><span class="country">Ливан</span></li>
-							<li><span class="country">Малайзия</span></li>
-							<li><span class="country">Мальдивские Острова</span></li>
-							<li><span class="country">Монголия</span></li>
-							<li><span class="country">Мьянма</span></li>
-							<li><span class="country">Непал</span></li>
-							<li><span class="country">ОАЭ</span></li>
-							<li><span class="country">Оман</span></li>
-							<li><span class="country">Пакистан</span></li>
-							<li><span class="country">Палестина</span></li>
-							<li><span class="country">Республика Корея</span></li>
-							<li><span class="country">Россия</span></li>
-							<li><span class="country">Саудовская Аравия</span></li>
-							<li><span class="country">Сингапур</span></li>
-							<li><span class="country">Сирия</span></li>
-							<li><span class="country">Таджикистан</span></li>
-							<li><span class="country">Таиланд</span></li>
-							<li><span class="country">Туркменистан</span></li>
-							<li><span class="country">Турция</span></li>
-							<li><span class="country">Узбекистан</span></li>
-							<li><span class="country">Филиппины</span></li>
-							<li><span class="country">Шри-Ланка</span></li>
-							<li><span class="country">Южная Осетия</span></li>
-							<li><span class="country">Япония</span></li>
-						</ul>
-					</div>
+					<h2>Спецпроекты</h2>
 				</div>
 			</header>
 			<div class="top-news">
@@ -652,30 +597,6 @@
 		</aside>
 	</section>
 </main>
-<script>
-		// селект стран
-
-	var countrySelect = document.getElementById('select');
-	var allCountry = document.getElementsByClassName('country');
-	var activeCountry = document.getElementsByClassName('active-country')[0];
-	var selectedCountry = document.getElementsByClassName('selected-country')[0];
-
-	countrySelect.onclick = function() {
-		var countryList = document.getElementsByClassName('country-select')[0];
-		activeCountry.classList.toggle('opened-list');
-		countryList.classList.toggle('expand-country');
-	}
-
-	function replaceCountry() {
-		var country;
-		for(var i = 0; i < allCountry.length; i++) {
-			allCountry[i].onclick = function() {
-				activeCountry.innerHTML = activeCountry.innerHTML.replace(activeCountry.innerHTML, this.innerHTML);
-			}
-		}
-	}
-	replaceCountry();
-</script>
 <!-- end special.html-->
 
 <!-- close container-->
@@ -740,6 +661,7 @@
 <script src="js/custom.js"></script>
 <script src="js/device.js"></script>
 <script src="js/social-likes.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script>
 $(document).ready(function(){
 	$('.slider__top-news').slick({
@@ -802,30 +724,6 @@ $(document).ready(function(){
 		]
 	});
 	$('.materials__slider-news').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		infinite: false,
-		variableWidth: true,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					variableWidth: false
-				}
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					variableWidth: false
-				}
-			}
-		]
-	});
-	$('.schedule__slider').slick({
-		appendArrows: $('.schedule__arrows'),
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		infinite: false,
@@ -1022,6 +920,53 @@ $(document).ready(function(){
 					variableWidth: false
 				}
 			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.schedule__slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		variableWidth: true,
+		asNavFor: '.schedule__slider-title',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.schedule__slider-title').slick({
+		appendArrows: $('.schedule__arrows'),
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		variableWidth: true,
+		asNavFor: '.schedule__slider',
+		responsive: [
 			{
 				breakpoint: 768,
 				settings: {

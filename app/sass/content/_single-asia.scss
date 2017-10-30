@@ -318,6 +318,10 @@ hr {
 			width: 240px;
 			height: 150px;
 			margin: 0 4px;
+			@include breakpoint(max-width 768px) {
+				width: auto;
+				height: auto;
+			}
 		}
 	}
 

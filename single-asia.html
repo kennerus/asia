@@ -11,6 +11,7 @@
     <link href="css/libs.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min">
 </head>
 <body>
 <!-- open .header -->
@@ -677,6 +678,7 @@
 								</div>
 							</div>
 						</div>
+						<h4>Пекин</h4>
 						<p>Что среднестатистический человек может сказать о Кувейте? Скорее всего, совсем немного: это арабская страна, в которой есть нефть. Более   эрудированные еще добавят, что Кувейт можно считать началом краха власти президента Ирака Саддама Хусейна. И все-таки, что же представляет собой государство Кувейт? Это урбанизированный и динамично развивающийся эмират, который уютно расположился на северо-востоке Аравийского полуострова и на близлежащих островах Персидского залива.   На севере и западе страна граничит с Исламской Республикой Иран, на юге - с Королевством Саудовская Аравия.</p>
 						<p>Что среднестатистический человек может сказать о Кувейте? Скорее всего, совсем немного: это арабская страна, в которой есть нефть. Более   эрудированные еще добавят, что Кувейт можно считать началом краха власти президента Ирака Саддама Хусейна. И все-таки, что же представляет собой государство Кувейт? Это урбанизированный и динамично развивающийся эмират, который уютно расположился на северо-востоке Аравийского полуострова и на близлежащих островах Персидского залива.   На севере и западе страна граничит с Исламской Республикой Иран, на юге - с Королевством Саудовская Аравия.</p>
 						<p>У любого мало мальского натуралиста флора и фауна Кувейта не вызовет бурных восторгов. Природа скудна и неприхотлива: верблюжья колючка, кермек и  иногда может попасться акация. Другое дело воспетые еще древними путешественниками оазисы, в которых   современные кувейтцы с успехом выращивают финиковые пальмы, просо и кукурузу.</p>
@@ -903,6 +905,7 @@
 <script src="js/custom.js"></script>
 <script src="js/device.js"></script>
 <script src="js/social-likes.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script>
 $(document).ready(function(){
 	$('.slider__top-news').slick({
@@ -965,30 +968,6 @@ $(document).ready(function(){
 		]
 	});
 	$('.materials__slider-news').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		infinite: false,
-		variableWidth: true,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					variableWidth: false
-				}
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					variableWidth: false
-				}
-			}
-		]
-	});
-	$('.schedule__slider').slick({
-		appendArrows: $('.schedule__arrows'),
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		infinite: false,
@@ -1185,6 +1164,53 @@ $(document).ready(function(){
 					variableWidth: false
 				}
 			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.schedule__slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		variableWidth: true,
+		asNavFor: '.schedule__slider-title',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.schedule__slider-title').slick({
+		appendArrows: $('.schedule__arrows'),
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		variableWidth: true,
+		asNavFor: '.schedule__slider',
+		responsive: [
 			{
 				breakpoint: 768,
 				settings: {

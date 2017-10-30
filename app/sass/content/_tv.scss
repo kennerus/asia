@@ -11,8 +11,128 @@
 	}
 }
 
+.schedule__arrows {
+	position: relative;
+}
+
 .tv__schedule {
 	h2 {
+		margin-bottom: 0;
 		font-size: 26px;
+		border: none;
 	}
+
+	.tv__schedule-title {
+		border-bottom: 2px solid #ff6200;
+
+		#select {
+			position: relative;
+			.opened-list {
+				color: #ff6200;
+				border-color: #ff6200 !important;
+				&:after {
+					background-image: url(../img/arrow-right-vert.png);
+					background-size: contain;
+				}
+			}
+		}
+
+		#select .active-country {
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 12px;
+			border: 1px solid black;
+			padding: 3px 30px 2px 13px;
+		}
+
+		#select .expand-country {
+			top: 5px;
+			width: 134px;
+			height: auto;
+			box-sizing: border-box;
+		}
+	}
+}
+
+.tv__schedule-title #select .active-country::after {
+	top: 7px;
+	margin-left: 10px;
+}
+
+.schedule__slider .schedule__slide,
+.schedule__slider-title .schedule__slide-title {
+	max-width: 270px;
+	width: 100%;
+	height: 100%;
+	margin: 0 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	h3 {
+		margin-bottom: 0;
+		font-family: 'Roboto-Black', sans-serif;
+		font-weight: normal;
+		font-size: 18px;
+		font-variant: small-caps;
+	}
+
+	.today {
+		display: none;
+		h4 {
+			margin: 0;
+			margin-top: 5px;
+			text-align: center;
+			font-family: 'Roboto-Medium', sans-serif;
+			font-size: 15px;
+			color: #ff6101;
+			text-decoration: underline;
+			font-variant: small-caps;
+		}
+	}
+
+	.today-act {
+		display: block;
+	}
+
+	.schedule__table {
+		th {
+			font-family: 'Roboto-Bold', sans-serif;
+			font-size: 13px;
+			padding-right: 15px;
+			vertical-align: top;
+		}
+
+		td {
+			padding-bottom: 15px;
+			font-size: 15px;
+			font-variant: small-caps;
+		}
+
+		.ended {
+			color: #a9a9a9;
+		}
+
+		.live-now {
+			position: relative;
+			color: #ff6101;
+			&:after {
+				content: 'сейчас';
+				position: absolute;
+				top: 15px;
+				left: 1px;
+				font-family: 'Roboto-Black', sans-serif;
+				font-size: 11px;
+			}
+		}
+
+		.time {
+			font-family: 'Roboto-Bold', sans-serif;
+		}
+	}
+
+}
+
+.schedule__slider-title .schedule__slide-title {
+	justify-content: flex-start;
+	margin-bottom: 15px;
 }

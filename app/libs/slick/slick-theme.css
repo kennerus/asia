@@ -277,6 +277,26 @@
     background-color: white;
 }
 
+.schedule__arrows .slick-prev:before {
+    content: '';
+    background-image: url(../../img/arrow-left-act-big.png);
+}
+
+.schedule__arrows .slick-prev {
+    left: 0;
+    top: 40px;
+}
+
+.schedule__arrows .slick-next {
+    right: 0;
+    top: 40px;
+}
+
+.schedule__arrows .slick-next:before {
+    content: '';
+    background-image: url(../../img/arrow-right-act-big.png);
+}
+
 .news__slider .slick-next:before,
 .news__slider .slick-prev:before,
 .video__slider .slick-next:before,

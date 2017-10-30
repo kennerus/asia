@@ -4,6 +4,7 @@
 <script src="js/custom.js"></script>
 <script src="js/device.js"></script>
 <script src="js/social-likes.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script>
 $(document).ready(function(){
 	$('.slider__top-news').slick({
@@ -66,30 +67,6 @@ $(document).ready(function(){
 		]
 	});
 	$('.materials__slider-news').slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		infinite: false,
-		variableWidth: true,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					variableWidth: false
-				}
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					slidesToShow: 1,
-					variableWidth: false
-				}
-			}
-		]
-	});
-	$('.schedule__slider').slick({
-		appendArrows: $('.schedule__arrows'),
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		infinite: false,
@@ -286,6 +263,53 @@ $(document).ready(function(){
 					variableWidth: false
 				}
 			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.schedule__slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		variableWidth: true,
+		asNavFor: '.schedule__slider-title',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.schedule__slider-title').slick({
+		appendArrows: $('.schedule__arrows'),
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		variableWidth: true,
+		asNavFor: '.schedule__slider',
+		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
