@@ -11,7 +11,6 @@
     <link href="css/libs.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min">
 </head>
 <body>
 <!-- open .header -->
@@ -340,14 +339,20 @@
 							<p>Несколько автобусов ходит из дальневосточных приграничных городов России в Китай. Например, из Забайкальска несколько рейсов в день в городок Маньчжурия(Маньчжоули), стоимость около 500 руб. Из Благовещенска в Хэйхе летом плавает паром(около 1500 руб), зимой ходят автобусы по льду(1500-1600 руб). Эти два города расположены на противоположных берегах реки Амур. Много автобусов соединяет Казахстан с Китаем (город Урумчи). Самые многочисленные рейсы из Алматы, каждый день. Также автобусы ходят и из других городов Казахстана: Семипалатинска, Усть-Каменогорска, Талдыкургана-отправляются по вторникам, четвергам, воскресениям. Что интересно, автобусы спальные, поэтому ехать в них довольно комфортно. Граница между Казахстаном и Китаем не работает по выходным!          </p>
 						</div>
 						<div class="single-asia__materials">
-							<div class="materials__head tab">
+							<!-- <div class="materials__head tab">
 								<h4>Материалы по Китаю:</h4>
 								<button class="tablinks" id="defaultOpen" onclick="openTab(event, 'news')">Новости(22)</button>
 								<button class="tablinks" onclick="openTab(event, 'publications')">Публикации(88)</button>
 								<button class="tablinks" onclick="openTab(event, 'video')">Видео(55)</button>
 								<button class="tablinks" onclick="openTab(event, 'special')">Спецпроекты(42)</button>
-							</div>
-							<div class="materials__head-tabs">
+							</div> -->
+							<div class="materials__head-tabs" id="tabs">
+								  <ul>
+								    <li><a href="#news">Новости(22)</a></li>
+								    <li><a href="#publications">Публикации(88)</a></li>
+								    <li><a href="#video">Видео(55)</a></li>
+								    <li><a href="#special">Спецпроекты(42)</a></li>
+								  </ul>
 								<div class="tabcontent news-blocks" id="news">
 									<div class="materials__slider-news">
 										<div class="small-block">
@@ -822,24 +827,27 @@
 	}
 	replaceCountry();
 
-	function openTab(evt, tabNum) {
-		// Declare all variables
-		var i, tabcontent, tablinks;
-		// Get all elements with class="tabcontent" and hide them
-		tabcontent = document.getElementsByClassName("tabcontent");
-		for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-		}
-		// Get all elements with class="tablinks" and remove the class "active"
-		tablinks = document.getElementsByClassName("tablinks");
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		}
-		// Show the current tab, and add an "active" class to the link that opened the tab
-		document.getElementById(tabNum).style.display = "block";
-		evt.currentTarget.className += " active";
-	};
-	document.getElementById("defaultOpen").click();
+	// function openTab(evt, tabNum) {
+	// 	// Declare all variables
+	// 	var i, tabcontent, tablinks;
+	// 	// Get all elements with class="tabcontent" and hide them
+	// 	tabcontent = document.getElementsByClassName("tabcontent");
+	// 	for (i = 0; i < tabcontent.length; i++) {
+	// 		tabcontent[i].style.display = "none";
+	// 		tabcontent[i].style.height = "0";
+	// 		tabcontent[i].style.overflow = "hidden";
+	// 	}
+	// 	// Get all elements with class="tablinks" and remove the class "active"
+	// 	tablinks = document.getElementsByClassName("tablinks");
+	// 	for (i = 0; i < tablinks.length; i++) {
+	// 		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	// 	}
+	// 	// Show the current tab, and add an "active" class to the link that opened the tab
+	// 	document.getElementById(tabNum).style.display = "block";
+	// 	document.getElementById(tabNum).style.height = "auto";
+	// 	evt.currentTarget.className += " active";
+	// };
+	// document.getElementById("defaultOpen").click();
 </script>
 <!-- end single-asia.html-->
 
@@ -906,6 +914,7 @@
 <script src="js/device.js"></script>
 <script src="js/social-likes.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
 $(document).ready(function(){
 	$('.slider__top-news').slick({
@@ -1185,18 +1194,19 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		variableWidth: true,
+		arrows: false,
 		asNavFor: '.schedule__slider-title',
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
-					variableWidth: false
+					slidesToScroll: 2,
+					variableWidth: true
 				}
 			},
 			{
-				breakpoint: 576,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
 					variableWidth: false
@@ -1212,15 +1222,15 @@ $(document).ready(function(){
 		asNavFor: '.schedule__slider',
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
+					slidesToScroll: 2,
 					variableWidth: false
 				}
 			},
 			{
-				breakpoint: 576,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
 					variableWidth: false
@@ -1287,12 +1297,102 @@ $(document).ready(function(){
 		appendArrows: $('.contests__arrows'),
 		infinite: false
 	});
+	$('#tu .tv__modal-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	$('#wed .tv__modal-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	$('#thur .tv__modal-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	$('#fr .tv__modal-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	
+	//fancybox
 
+	$('[data-fancybox]').fancybox({
+	});
+
+	//закрытие модалки на странице событий
 	var mmodal = $('.modal');
 	$(document).on('click','span.close',function(e){
 		$.each(mmodal,function(){
 			$(this).removeClass('activeModal');
 		});
+	});
+
+	$( function() {
+		$( "#tabs" ).tabs();
 	});
 });
 </script>

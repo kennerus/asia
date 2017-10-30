@@ -280,9 +280,13 @@ hr {
 		width: 100%;
 		margin-top: 0;
 		padding: 0;
+		@include breakpoint(max-width 576px) {
+			text-align: center;
+		}
 	}
 
 	.tablinks {
+		margin: 0 auto;
 		padding: 5px 0;
 		background-color: transparent;
 		border: 0;
@@ -291,6 +295,11 @@ hr {
 		color: black;
 		cursor: pointer;
 		text-align: left;
+		@include breakpoint(max-width 576px) {
+			padding: 5px 10px;
+			text-align: center;
+		}
+
 		&:hover {
 			border-bottom: 2px solid #ff6900;
 		}
