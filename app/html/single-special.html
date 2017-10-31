@@ -4,6 +4,62 @@
 			<header class="header__content">
 				<div class="news-main__title">
 					<h2>Спецпроекты</h2>
+					<div id="select">
+						<span class="active-country">Выберите страну</span>
+						<ul class="country-select">
+							<li><span class="country">Абхазия</span></li>
+							<li><span class="country">Азербайджан</span></li>
+							<li><span class="country">Армения</span></li>
+							<li><span class="country">Афганистан</span></li>
+							<li><span class="country">Бангладеш</span></li>
+							<li><span class="country">Бахрейн</span></li>
+							<li><span class="country">Бруней</span></li>
+							<li><span class="country">Бутан</span></li>
+							<li><span class="country">Восточный Тимор</span></li>
+							<li><span class="country">Вьетнам</span></li>
+							<li><span class="country">Грузия</span></li>
+							<li><span class="country">Израиль</span></li>
+							<li><span class="country">Индия</span></li>
+							<li><span class="country">Индонезия</span></li>
+							<li><span class="country">Иордания</span></li>
+							<li><span class="country">Ирак</span></li>
+							<li><span class="country">Иран</span></li>
+							<li><span class="country">Йемен</span></li>
+							<li><span class="country">Казахстан</span></li>
+							<li><span class="country">Кабоджа</span></li>
+							<li><span class="country">Катар</span></li>
+							<li><span class="country">Кипр</span></li>
+							<li><span class="country">Киргизя</span></li>
+							<li><span class="country">Китай</span></li>
+							<li><span class="country">КНДР (Северная Корея)</span></li>
+							<li><span class="country">Кувейт</span></li>
+							<li><span class="country">Лаос</span></li>
+							<li><span class="country">Ливан</span></li>
+							<li><span class="country">Малайзия</span></li>
+							<li><span class="country">Мальдивские Острова</span></li>
+							<li><span class="country">Монголия</span></li>
+							<li><span class="country">Мьянма</span></li>
+							<li><span class="country">Непал</span></li>
+							<li><span class="country">ОАЭ</span></li>
+							<li><span class="country">Оман</span></li>
+							<li><span class="country">Пакистан</span></li>
+							<li><span class="country">Палестина</span></li>
+							<li><span class="country">Республика Корея</span></li>
+							<li><span class="country">Россия</span></li>
+							<li><span class="country">Саудовская Аравия</span></li>
+							<li><span class="country">Сингапур</span></li>
+							<li><span class="country">Сирия</span></li>
+							<li><span class="country">Таджикистан</span></li>
+							<li><span class="country">Таиланд</span></li>
+							<li><span class="country">Туркменистан</span></li>
+							<li><span class="country">Турция</span></li>
+							<li><span class="country">Узбекистан</span></li>
+							<li><span class="country">Филиппины</span></li>
+							<li><span class="country">Шри-Ланка</span></li>
+							<li><span class="country">Южная Осетия</span></li>
+							<li><span class="country">Япония</span></li>
+						</ul>
+					</div>
 				</div>
 			</header>
 			<article class="single-news__arcticle">
@@ -433,6 +489,32 @@
 		</aside>
 	</section>
 </main>
+
+<script type="text/javascript">
+	// селект стран
+
+	var countrySelect = document.getElementById('select');
+	var allCountry = document.getElementsByClassName('country');
+	var activeCountry = document.getElementsByClassName('active-country')[0];
+	var selectedCountry = document.getElementsByClassName('selected-country')[0];
+
+	countrySelect.onclick = function() {
+		var countryList = document.getElementsByClassName('country-select')[0];
+		activeCountry.classList.toggle('opened-list');
+		countryList.classList.toggle('expand-country');
+	}
+
+	function replaceCountry() {
+		var country;
+		for(var i = 0; i < allCountry.length; i++) {
+			allCountry[i].onclick = function() {
+				activeCountry.innerHTML = activeCountry.innerHTML.replace(activeCountry.innerHTML, this.innerHTML);
+			}
+		}
+	}
+	replaceCountry();
+
+</script>
 
 <script type="text/javascript">
 	var like = document.getElementsByClassName('like');

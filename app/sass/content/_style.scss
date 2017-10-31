@@ -59,15 +59,15 @@
 
 	.top-news__describe {
 				width: 95%;
-				padding: 20px 20px;
+				padding: 20px 20px 10px;
 				position: absolute;
 				bottom: 0;
 				background: linear-gradient(to top, hsla(240, 81%, 6%, 0.75), transparent);
 				color: white;
 				z-index: 2;
 				h3 {
-					max-width: 450px;
-					margin: 10px 0 0;
+					max-width: 600px;
+					margin: 0;
 					text-transform: uppercase;
 				}
 
@@ -132,7 +132,7 @@
 
 			.news__latest-title {
 				height: 35%;
-				padding: 10px;
+				padding: 10px 10px 5px;
 				display: flex;
 				align-items: flex-end;
 				flex-wrap: wrap;
@@ -141,7 +141,7 @@
 				background: linear-gradient(to top, hsla(240, 81%, 6%, 0.75), transparent);
 				span {
 					position: relative;
-					top: 10px;
+					top: 20px;
 					font-family: 'Lato-Medium', sans-serif;
 					font-size: 12px;
 				}
@@ -224,7 +224,7 @@
 
 			span {
 				position: relative;
-				top: 7px;
+				top: 8px;
 				font-family: 'Lato-Medium', sans-serif;
 				font-size: 10px;
 				@include breakpoint(max-width 576px) {
@@ -234,7 +234,7 @@
 
 			h4 {
 				position: relative;
-				top: 7px;
+				top: 8px;
 				margin: 0;
 				line-height: 0.9;
 
@@ -589,7 +589,7 @@
 			flex-wrap: wrap;
 			div {
 				position: relative;
-				top: 20px;
+				top: 30px;
 				width: 80%;
 				display: flex;
 				align-items: center;

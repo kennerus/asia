@@ -239,9 +239,12 @@ span[data-fancybox] {
 			margin-right: 10px;
 		}
 
-		a {
+		button {
 			margin: 15px;
 			color: black;
+			cursor: pointer;
+			background-color: transparent;
+			border: none;
 			transition: opacity 0.2s;
 			&:hover, &:active, &:focus {
 				transition: opacity 0.2s;

@@ -288,6 +288,8 @@ textarea{
             }
 
             h4{
+                position: relative;
+                top: 20px;
                 margin: 0;
                 @include breakpoint(max-width 576px) {
                     white-space: nowrap;
@@ -304,7 +306,7 @@ textarea{
         }
 
         .big-block__title-top {
-            padding: 0 0 20px 15px;
+            padding: 0 0 10px 15px;
             span {
                 font-size: 12px;
                 text-transform: none;
@@ -323,6 +325,10 @@ textarea{
             bottom: 0;
             @include breakpoint(max-width 576px) {
                 bottom: 3px;
+            }
+
+            h4 {
+                top: 0;
             }
         }
     }

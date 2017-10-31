@@ -20,7 +20,7 @@
 	flex-wrap: wrap;
 }
 
-.video__blocks {
+.video__block {
 	width: 200px;
 	height: 275px;
 	margin: 20px 0;
@@ -52,7 +52,7 @@
 	}
 
 	.video__blocks-title {
-		width: 85%;
+		width: 90%;
 		margin: 0 auto;
 		h4 {
 			margin: 10px 0 20px;
@@ -63,13 +63,47 @@
 	}
 
 	.video__blocks-describe {
-		width: 85%;
+		width: 90%;
 		margin: 0 auto;
 		p {
 			margin: 5px 0;
 			font-family: 'Roboto-Bold', sans-serif;
 			font-size: 13px;
 			color: #676767;
+		}
+	}
+}
+
+.video__modal {
+	display: none;
+	max-width: 685px;
+	width: 100%;
+
+	.modal__title {
+		font-family: 'Lato-Bold', sans-serif;
+		font-weight: normal;
+		font-size: 18px;
+	}
+
+	.modal__video {
+		width: 100%;
+		margin: 0 auto;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.modal__ad {
+		position: absolute;
+		top: 200px;
+		right: 255px;
+		width: 240px;
+		height: 400px;
+		img {
+			max-width: 100%;
+			height: auto;
 		}
 	}
 }
