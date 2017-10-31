@@ -325,11 +325,26 @@ hr {
 
 		.small-block {
 			width: 240px;
-			height: 150px;
+			height: auto;
 			margin: 0 4px;
-			@include breakpoint(max-width 768px) {
-				width: auto;
+
+			@include breakpoint(max-width 1200px) {
+				width: 18.3vw;
 				height: auto;
+			}
+
+			@include breakpoint(max-width 992px) {
+				width: 27vw;
+				height: auto;
+			}
+
+			@include breakpoint(max-width 768px) {
+				width: 40vw;
+				height: auto;
+			}
+
+			@include breakpoint(max-width 576px) {
+				width: 85vw;
 			}
 		}
 	}
